@@ -14,6 +14,7 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 - [x] childrens-book-illustration-brief, `tested`
 - [x] read-aloud-pacing-checker, `tested`
 - [x] decision-journal, `tested`
+- [x] habit-relapse-recovery-planner, `tested`
 
 ## Design and product, `idea`
 
@@ -51,7 +52,6 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 
 ## Life and household, `idea`
 
-- [ ] habit-relapse-recovery-planner: the restart plan for the moment right after a slip
 - [ ] gift-idea-tracker: captures hints people drop, organized by person and occasion
 - [ ] travel-packing-by-trip-type: a list tuned to trip type, weather, and activity mix
 - [ ] recipe-adapter: rescales or reworks a recipe and explains what changes structurally

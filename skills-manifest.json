@@ -69,6 +69,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Logs a decision with its reasoning and a scoreable prediction, then runs the calibration review later."
+    },
+    {
+      "name": "habit-relapse-recovery-planner",
+      "path": "skills/habit-relapse-recovery-planner",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Builds the restart plan for the moment right after a habit breaks, sized by cause rather than by a fixed cut."
     }
   ]
 }

@@ -44,6 +44,12 @@ They're built to hand off to each other: outline the arc first, draft against it
 |---|---|---|
 | [decision-journal](skills/decision-journal) | tested | Records a decision and a falsifiable prediction while it is still open, then scores the prediction later and separates a bad decision from bad luck |
 
+## Life and household
+
+| Skill | Status | What it does |
+|---|---|---|
+| [habit-relapse-recovery-planner](skills/habit-relapse-recovery-planner) | tested | The restart plan for the moment right after a habit breaks: what actually broke it, how small week one has to be, and the minimum version that still counts |
+
 Status key: `idea` not written, `draft` written but untested, `tested` run against real prompts by a fresh agent, `stable` used repeatedly over time.
 
 ## What "tested" means here
