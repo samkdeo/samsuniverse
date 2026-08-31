@@ -90,6 +90,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Derives a packing list from the trip's activity blocks, real forecast, container and wash cycle, and reviews an existing list for absences."
+    },
+    {
+      "name": "subscription-audit",
+      "path": "skills/subscription-audit",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Turns recurring charges into a dated cancel, downgrade, or reprice decision per line, with the method attached."
     }
   ]
 }

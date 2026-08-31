@@ -51,6 +51,7 @@ They're built to hand off to each other: outline the arc first, draft against it
 | [habit-relapse-recovery-planner](skills/habit-relapse-recovery-planner) | tested | The restart plan for the moment right after a habit breaks: what actually broke it, how small week one has to be, and the minimum version that still counts |
 | [gift-idea-tracker](skills/gift-idea-tracker) | tested | Captures the hints people drop in their own words, with what is actually stopping them, and turns the record into one recommendation rather than five |
 | [travel-packing-by-trip-type](skills/travel-packing-by-trip-type) | tested | Builds the list from the trip's activity blocks, the real forecast, the container and the wash cycle, and audits an existing list for what is missing before cutting anything |
+| [subscription-audit](skills/subscription-audit) | tested | Turns recurring charges into a dated decision per line, with the cancellation method attached and the export done before anything is switched off |
 
 Status key: `idea` not written, `draft` written but untested, `tested` run against real prompts by a fresh agent, `stable` used repeatedly over time.
 

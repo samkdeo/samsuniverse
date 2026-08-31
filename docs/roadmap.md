@@ -17,6 +17,7 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 - [x] habit-relapse-recovery-planner, `tested`
 - [x] gift-idea-tracker, `tested`
 - [x] travel-packing-by-trip-type, `tested`
+- [x] subscription-audit, `tested`
 
 ## Design and product, `idea`
 
@@ -50,7 +51,6 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 - [ ] contract-negotiation-prep: talking points and fallback positions for rate and scope
 - [ ] freelance-invoice-and-follow-up: invoices plus an escalating, professional chase schedule
 - [ ] tax-document-checklist-by-situation: what you need to gather, by income type. Organization, not advice
-- [ ] subscription-audit: walks recurring charges and flags the likely-unused ones
 
 ## Life and household, `idea`
 
