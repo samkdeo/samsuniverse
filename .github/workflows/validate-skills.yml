@@ -1,0 +1,86 @@
+name: Validate Skills
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    paths:
+      - 'skills/**'
+      - 'skills-manifest.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: pip install pyyaml
+
+      - name: Validate SKILL.md frontmatter and naming
+        run: |
+          python3 - <<'EOF'
+          import os, sys, json, yaml
+
+          errors = []
+          names = set()
+
+          for entry in sorted(os.listdir('skills')):
+              path = os.path.join('skills', entry)
+              if not os.path.isdir(path):
+                  continue
+              skill_md = os.path.join(path, 'SKILL.md')
+              if not os.path.exists(skill_md):
+                  errors.append(f"{entry}: missing SKILL.md")
+                  continue
+
+              with open(skill_md) as f:
+                  content = f.read()
+
+              if not content.startswith('---'):
+                  errors.append(f"{entry}: SKILL.md missing YAML frontmatter")
+                  continue
+
+              try:
+                  meta = yaml.safe_load(content.split('---')[1])
+              except Exception as e:
+                  errors.append(f"{entry}: invalid frontmatter YAML ({e})")
+                  continue
+
+              if 'name' not in meta or 'description' not in meta:
+                  errors.append(f"{entry}: frontmatter missing name or description")
+                  continue
+
+              if meta['name'] != entry:
+                  errors.append(f"{entry}: frontmatter name '{meta['name']}' != folder name '{entry}'")
+
+              if meta['name'] in names:
+                  errors.append(f"{entry}: duplicate skill name '{meta['name']}'")
+              names.add(meta['name'])
+
+              line_count = len(content.splitlines())
+              if line_count > 500:
+                  errors.append(f"{entry}: SKILL.md is {line_count} lines, over the 500-line ceiling")
+
+          with open('skills-manifest.json') as f:
+              manifest = json.load(f)
+
+          manifest_names = {s['name'] for s in manifest['skills']}
+          for missing in names - manifest_names:
+              errors.append(f"{missing}: in skills/ but not in skills-manifest.json")
+          for stale in manifest_names - names:
+              errors.append(f"{stale}: in skills-manifest.json but no such folder under skills/")
+
+          if errors:
+              print("Validation failed:")
+              for e in errors:
+                  print(f"  - {e}")
+              sys.exit(1)
+
+          print(f"All {len(names)} skills validated successfully.")
+          EOF

@@ -1,0 +1,32 @@
+{
+  "skills": [
+    {
+      "name": "portfolio-case-study-outline",
+      "path": "skills/portfolio-case-study-outline",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Structures a portfolio case study: sections, word budget, the visual beside each, and captions."
+    },
+    {
+      "name": "stakeholder-interview-synthesizer",
+      "path": "skills/stakeholder-interview-synthesizer",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Turns rough interview notes into decision-ready themes with the disagreements named."
+    },
+    {
+      "name": "feature-flag-rollout-planner",
+      "path": "skills/feature-flag-rollout-planner",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Plans a staged rollout: ramp, guardrail metrics, kill criteria as numbers, and flag cleanup."
+    },
+    {
+      "name": "naming-and-taxonomy-checker",
+      "path": "skills/naming-and-taxonomy-checker",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Audits product terminology for collisions and split terms, and prices the migration."
+    }
+  ]
+}
