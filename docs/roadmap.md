@@ -18,6 +18,7 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 - [x] gift-idea-tracker, `tested`
 - [x] travel-packing-by-trip-type, `tested`
 - [x] subscription-audit, `tested`
+- [x] eulogy-and-toast-writer, `tested`
 
 ## Design and product, `idea`
 
@@ -39,7 +40,6 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 
 - [ ] long-form-editor-for-voice: edits toward a person's established voice rather than a generic improvement
 - [ ] book-notes-synthesizer: extracts the three to five ideas worth keeping after finishing a book
-- [ ] eulogy-and-toast-writer: structured drafting for speeches, sized to the room and the occasion
 
 ## Learning, `idea`
 

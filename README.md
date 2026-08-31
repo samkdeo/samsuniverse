@@ -38,6 +38,12 @@ You don't invoke a skill by hand. Claude loads it when your request matches its 
 
 They're built to hand off to each other: outline the arc first, draft against it, then check the pacing.
 
+## Writing and speaking
+
+| Skill | Status | What it does |
+|---|---|---|
+| [eulogy-and-toast-writer](skills/eulogy-and-toast-writer) | tested | Eulogies, toasts, and leaving speeches built from specific things that happened, sized to the slot, in the speaker's own vocabulary |
+
 ## Working with other people
 
 | Skill | Status | What it does |

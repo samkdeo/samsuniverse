@@ -97,6 +97,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Turns recurring charges into a dated cancel, downgrade, or reprice decision per line, with the method attached."
+    },
+    {
+      "name": "eulogy-and-toast-writer",
+      "path": "skills/eulogy-and-toast-writer",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Drafts eulogies, toasts, and leaving speeches from specifics rather than adjectives, in the speaker's own voice."
     }
   ]
 }
