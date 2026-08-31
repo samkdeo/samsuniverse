@@ -83,6 +83,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Captures gift hints in the person's own words with date and blocker, then turns the record into a choice."
+    },
+    {
+      "name": "travel-packing-by-trip-type",
+      "path": "skills/travel-packing-by-trip-type",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Derives a packing list from the trip's activity blocks, real forecast, container and wash cycle, and reviews an existing list for absences."
     }
   ]
 }

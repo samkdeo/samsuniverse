@@ -16,6 +16,7 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 - [x] decision-journal, `tested`
 - [x] habit-relapse-recovery-planner, `tested`
 - [x] gift-idea-tracker, `tested`
+- [x] travel-packing-by-trip-type, `tested`
 
 ## Design and product, `idea`
 
@@ -53,7 +54,6 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 
 ## Life and household, `idea`
 
-- [ ] travel-packing-by-trip-type: a list tuned to trip type, weather, and activity mix
 - [ ] recipe-adapter: rescales or reworks a recipe and explains what changes structurally
 - [ ] home-project-scoper: turns a vague renovation wish into a scoped, sequenced task list
 - [ ] photo-culling-assistant: triages a large batch down to a keeper set against stated criteria
