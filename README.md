@@ -49,6 +49,7 @@ They're built to hand off to each other: outline the arc first, draft against it
 | Skill | Status | What it does |
 |---|---|---|
 | [habit-relapse-recovery-planner](skills/habit-relapse-recovery-planner) | tested | The restart plan for the moment right after a habit breaks: what actually broke it, how small week one has to be, and the minimum version that still counts |
+| [gift-idea-tracker](skills/gift-idea-tracker) | tested | Captures the hints people drop in their own words, with what is actually stopping them, and turns the record into one recommendation rather than five |
 
 Status key: `idea` not written, `draft` written but untested, `tested` run against real prompts by a fresh agent, `stable` used repeatedly over time.
 

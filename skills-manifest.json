@@ -76,6 +76,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Builds the restart plan for the moment right after a habit breaks, sized by cause rather than by a fixed cut."
+    },
+    {
+      "name": "gift-idea-tracker",
+      "path": "skills/gift-idea-tracker",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Captures gift hints in the person's own words with date and blocker, then turns the record into a choice."
     }
   ]
 }
