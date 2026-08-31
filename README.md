@@ -1,8 +1,10 @@
 # Sam's Universe
 
-Claude skills for design and product work. Each one is a self-contained folder that teaches Claude a specific workflow it would otherwise do generically, or skip.
+Claude skills for design and product work, and for writing children's books. Each one is a self-contained folder that teaches Claude a specific workflow it would otherwise do generically, or skip.
 
-These are the skills I wanted and couldn't find, built for the parts of the job where a generic answer is worse than no answer: writing up a project so it shows judgment rather than process, reading a round of stakeholder interviews without smoothing the disagreements away, shipping behind a flag without discovering at 3am that the dashboards were green the whole time, and cleaning up product terminology without breaking every customer's integration.
+These are the skills I wanted and couldn't find, built for the parts of a job where a generic answer is worse than no answer: writing up a project so it shows judgment rather than process, reading a round of stakeholder interviews without smoothing the disagreements away, shipping behind a flag without discovering at 3am that the dashboards were green the whole time, and cleaning up product terminology without breaking every customer's integration.
+
+The picture book skills come from the same instinct. A story for a four-year-old has real structural rules, such as word counts, page-turn beats, and how much work the illustration does instead of the text, and a model that doesn't know them writes something that reads fine on screen and falls apart out loud.
 
 ## Install
 
@@ -15,7 +17,7 @@ Keep the folder name as it is. The `name` field inside `SKILL.md` has to match t
 
 You don't invoke a skill by hand. Claude loads it when your request matches its description, which is why the descriptions here list so many trigger phrases: Claude under-triggers skills far more often than it over-triggers them.
 
-## The skills
+## Design and product
 
 | Skill | Status | What it does |
 |---|---|---|
@@ -24,13 +26,32 @@ You don't invoke a skill by hand. Claude loads it when your request matches its 
 | [feature-flag-rollout-planner](skills/feature-flag-rollout-planner) | tested | Ramp schedule, guardrail metrics, kill criteria written as numbers, and the date the flag gets deleted |
 | [naming-and-taxonomy-checker](skills/naming-and-taxonomy-checker) | tested | Audits product terminology for collisions and split terms, then prices the migration by what each rename costs |
 
+## Children's books
+
+| Skill | Status | What it does |
+|---|---|---|
+| [story-arc-for-young-readers](skills/story-arc-for-young-readers) | tested | Structures a story into an age-appropriate arc before any prose is drafted, for picture books and chapter books |
+| [picture-book-writer](skills/picture-book-writer) | tested | Drafts age-banded manuscript text with the rhythm and repetition picture books rely on |
+| [character-bible-builder](skills/character-bible-builder) | tested | Locks a character or a small cast, for one book or across a series |
+| [childrens-book-illustration-brief](skills/childrens-book-illustration-brief) | tested | Turns a manuscript into a page-by-page illustration and art-direction brief |
+| [read-aloud-pacing-checker](skills/read-aloud-pacing-checker) | tested | Reviews a manuscript for read-aloud rhythm, page-turn pacing, and metre in verse |
+
+They're built to hand off to each other: outline the arc first, draft against it, then check the pacing.
+
 Status key: `idea` not written, `draft` written but untested, `tested` run against real prompts by a fresh agent, `stable` used repeatedly over time.
 
 ## What "tested" means here
 
 A skill is only marked `tested` once a fresh agent has read the `SKILL.md` file and nothing else, answered a realistic prompt with it, and reported back on what the file left ambiguous.
 
-Reading a skill back to yourself doesn't count. You know what you meant, so you fill the gaps without noticing they're gaps. Every skill in this repo failed something on its first test round, and the failures were the useful part. The rollout planner never said that a service returning plausible but wrong values keeps every error-rate and latency dashboard green, which meant a rollout following it would have watched the wrong metrics while charging customers incorrectly. That fix only exists because someone who hadn't written the file tried to use it.
+Reading a skill back to yourself doesn't count. You know what you meant, so you fill the gaps without noticing they're gaps. Every skill here failed something on its first round, and the failures were the useful part. The rollout planner never said that a service returning plausible but wrong values keeps every error-rate and latency dashboard green, which meant a rollout following it would have watched the wrong metrics while charging customers incorrectly. That fix only exists because someone who hadn't written the file tried to use it.
+
+There's a second round that matters just as much: running the skill on a scenario it wasn't tuned for. Re-testing the original prompt shows a fix landed, but a skill patched from one report will recite that report back convincingly. The five children's-book skills each passed their re-test and then failed a generalization round on something real, including a chapter-book word budget that would have told an author to halve a perfectly normal manuscript.
+
+**What each skill has actually been through**, since `tested` is otherwise doing a lot of unexamined work:
+
+- The five children's-book skills have had three rounds: two prompts each, a re-test after fixes, and a generalization round on a different format or age band, plus fixes after that.
+- The four design and product skills have had two rounds: two prompts each and a re-test. They have not had a generalization round, so their coverage outside the cases they were tested on is less established.
 
 ## Structure
 
@@ -40,7 +61,7 @@ Every skill is its own top-level folder under `skills/`, with no nesting by cate
 skills/
 ├── portfolio-case-study-outline/
 │   └── SKILL.md
-├── feature-flag-rollout-planner/
+├── picture-book-writer/
 │   └── SKILL.md
 └── ...
 ```

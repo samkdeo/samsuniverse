@@ -27,6 +27,41 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Audits product terminology for collisions and split terms, and prices the migration."
+    },
+    {
+      "name": "picture-book-writer",
+      "path": "skills/picture-book-writer",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Drafts age-banded picture book text with read-aloud rhythm and page-by-page pacing."
+    },
+    {
+      "name": "story-arc-for-young-readers",
+      "path": "skills/story-arc-for-young-readers",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Structures a children's story into an age-appropriate arc before prose is drafted."
+    },
+    {
+      "name": "character-bible-builder",
+      "path": "skills/character-bible-builder",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Locks a recurring character's appearance, voice, and continuity across a series."
+    },
+    {
+      "name": "childrens-book-illustration-brief",
+      "path": "skills/childrens-book-illustration-brief",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Turns manuscript text into a page-by-page illustration and art-direction brief."
+    },
+    {
+      "name": "read-aloud-pacing-checker",
+      "path": "skills/read-aloud-pacing-checker",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Reviews a manuscript for read-aloud rhythm and page-turn pacing."
     }
   ]
 }

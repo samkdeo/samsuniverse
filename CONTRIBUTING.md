@@ -43,6 +43,10 @@ Ask the test agent for three things beyond the answer itself: what it had to imp
 
 Expect the first round to fail. That's the point of running it.
 
+Then run a second round on a scenario the skill was **not** tuned for, before you call it tested. Re-running the original prompt shows the fix landed; it does not show the skill generalizes, and a skill patched from one report will recite that report back convincingly. Every skill in this repo passed its re-test and then failed a generalization round on something that mattered.
+
+Two things to watch when you write the fix. Don't turn a correct observation into a universal constant, because a number that fits one case misfires everywhere else; say what governs and when. And don't use your test prompt as the skill's worked example, which fits the skill to its own exam.
+
 ## Privacy
 
 Commits here are public. Configure git with a `@users.noreply.github.com` address before you commit, or your personal email ends up permanently in the history of a public repo.
