@@ -43,6 +43,7 @@ They're built to hand off to each other: outline the arc first, draft against it
 | Skill | Status | What it does |
 |---|---|---|
 | [eulogy-and-toast-writer](skills/eulogy-and-toast-writer) | tested | Eulogies, toasts, and leaving speeches built from specific things that happened, sized to the slot, in the speaker's own vocabulary |
+| [cold-outreach-personalizer](skills/cold-outreach-personalizer) | tested | Makes the specific detail the reason the message exists rather than decoration on it, and never invents a fact about a real person to make an opening work |
 
 ## Working with other people
 

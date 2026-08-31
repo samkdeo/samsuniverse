@@ -19,6 +19,7 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 - [x] travel-packing-by-trip-type, `tested`
 - [x] subscription-audit, `tested`
 - [x] eulogy-and-toast-writer, `tested`
+- [x] cold-outreach-personalizer, `tested`
 
 ## Design and product, `idea`
 
@@ -31,7 +32,6 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 ## Working with other people, `idea`
 
 - [ ] disagreement-de-escalator: lowers the temperature in a heated thread without capitulating
-- [ ] cold-outreach-personalizer: genuinely specific opening lines instead of templated flattery
 - [ ] co-parenting-message-drafter: neutral, logistics-first drafting for a high-friction channel
 - [ ] family-tradition-documenter: captures a recurring family story or tradition in the teller's voice
 - [ ] kid-question-answerer: age-calibrated honest answers that don't simplify into something false

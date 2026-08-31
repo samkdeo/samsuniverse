@@ -104,6 +104,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Drafts eulogies, toasts, and leaving speeches from specifics rather than adjectives, in the speaker's own voice."
+    },
+    {
+      "name": "cold-outreach-personalizer",
+      "path": "skills/cold-outreach-personalizer",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Makes the specific detail in a cold message the reason it exists, and never invents research about a real person."
     }
   ]
 }
