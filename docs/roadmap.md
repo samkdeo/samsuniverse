@@ -13,6 +13,7 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 - [x] character-bible-builder, `tested`
 - [x] childrens-book-illustration-brief, `tested`
 - [x] read-aloud-pacing-checker, `tested`
+- [x] decision-journal, `tested`
 
 ## Design and product, `idea`
 
@@ -24,7 +25,6 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 
 ## Working with other people, `idea`
 
-- [ ] decision-journal: logs a decision and its reasoning, then prompts a calibration review later
 - [ ] disagreement-de-escalator: lowers the temperature in a heated thread without capitulating
 - [ ] cold-outreach-personalizer: genuinely specific opening lines instead of templated flattery
 - [ ] co-parenting-message-drafter: neutral, logistics-first drafting for a high-friction channel

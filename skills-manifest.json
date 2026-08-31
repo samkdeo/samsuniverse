@@ -62,6 +62,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Reviews a manuscript for read-aloud rhythm and page-turn pacing."
+    },
+    {
+      "name": "decision-journal",
+      "path": "skills/decision-journal",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Logs a decision with its reasoning and a scoreable prediction, then runs the calibration review later."
     }
   ]
 }

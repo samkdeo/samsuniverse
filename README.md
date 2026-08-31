@@ -38,6 +38,12 @@ You don't invoke a skill by hand. Claude loads it when your request matches its 
 
 They're built to hand off to each other: outline the arc first, draft against it, then check the pacing.
 
+## Working with other people
+
+| Skill | Status | What it does |
+|---|---|---|
+| [decision-journal](skills/decision-journal) | tested | Records a decision and a falsifiable prediction while it is still open, then scores the prediction later and separates a bad decision from bad luck |
+
 Status key: `idea` not written, `draft` written but untested, `tested` run against real prompts by a fresh agent, `stable` used repeatedly over time.
 
 ## What "tested" means here
@@ -52,6 +58,7 @@ There's a second round that matters just as much: running the skill on a scenari
 
 - The five children's-book skills have had three rounds: two prompts each, a re-test after fixes, and a generalization round on a different format or age band, plus fixes after that.
 - The four design and product skills have had two rounds: two prompts each and a re-test. They have not had a generalization round, so their coverage outside the cases they were tested on is less established.
+- Everything after those nine has had the full three rounds: two prompts, a re-test, and a generalization round in a domain the skill was not written against.
 
 ## Structure
 
