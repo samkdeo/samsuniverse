@@ -195,6 +195,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Captures a family story, tradition, or skill in the holder's own voice, with the questions that produce detail."
+    },
+    {
+      "name": "kid-question-answerer",
+      "path": "skills/kid-question-answerer",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Gives an adult a true, age-pitched answer to a child's question, plus the follow-ups and one thing not to say."
     }
   ]
 }

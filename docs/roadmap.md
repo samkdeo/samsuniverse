@@ -32,6 +32,7 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 - [x] home-project-scoper, `tested`
 - [x] photo-culling-assistant, `tested`
 - [x] family-tradition-documenter, `tested`
+- [x] kid-question-answerer, `tested`
 
 ## Design and product, `idea`
 
@@ -44,7 +45,6 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 ## Working with other people, `idea`
 
 - [ ] co-parenting-message-drafter: neutral, logistics-first drafting for a high-friction channel
-- [ ] kid-question-answerer: age-calibrated honest answers that don't simplify into something false
 
 ## Writing, `idea`
 
