@@ -23,6 +23,7 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 - [x] disagreement-de-escalator, `tested`
 - [x] long-form-editor-for-voice, `tested`
 - [x] spaced-repetition-deck-builder, `tested`
+- [x] explain-like-im-at-my-level, `tested`
 
 ## Design and product, `idea`
 
@@ -44,7 +45,6 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 
 ## Learning, `idea`
 
-- [ ] explain-like-im-at-my-level: calibrates explanation depth from a short diagnostic
 
 ## Money and admin, `idea`
 

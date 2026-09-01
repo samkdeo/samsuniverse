@@ -132,6 +132,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Decides what belongs in spaced repetition, writes cards that survive months, and states the daily load before it is paid."
+    },
+    {
+      "name": "explain-like-im-at-my-level",
+      "path": "skills/explain-like-im-at-my-level",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Finds the person's actual starting point and the purpose, then explains to the specific gap rather than to a level."
     }
   ]
 }
