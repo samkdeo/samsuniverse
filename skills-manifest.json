@@ -111,6 +111,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Makes the specific detail in a cold message the reason it exists, and never invents research about a real person."
+    },
+    {
+      "name": "disagreement-de-escalator",
+      "path": "skills/disagreement-de-escalator",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Drafts a reply that concedes tone and holds substance, strips the structural escalators, and aims at a stated outcome."
     }
   ]
 }

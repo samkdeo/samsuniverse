@@ -49,6 +49,7 @@ They're built to hand off to each other: outline the arc first, draft against it
 
 | Skill | Status | What it does |
 |---|---|---|
+| [disagreement-de-escalator](skills/disagreement-de-escalator) | tested | Lowers the temperature in a heated thread without giving up the position: concedes what is genuinely true, strips the escalators, and aims at an outcome rather than at winning |
 | [decision-journal](skills/decision-journal) | tested | Records a decision and a falsifiable prediction while it is still open, then scores the prediction later and separates a bad decision from bad luck |
 
 ## Life and household
