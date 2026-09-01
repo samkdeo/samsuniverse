@@ -31,6 +31,7 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 - [x] recipe-adapter, `tested`
 - [x] home-project-scoper, `tested`
 - [x] photo-culling-assistant, `tested`
+- [x] family-tradition-documenter, `tested`
 
 ## Design and product, `idea`
 
@@ -43,7 +44,6 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 ## Working with other people, `idea`
 
 - [ ] co-parenting-message-drafter: neutral, logistics-first drafting for a high-friction channel
-- [ ] family-tradition-documenter: captures a recurring family story or tradition in the teller's voice
 - [ ] kid-question-answerer: age-calibrated honest answers that don't simplify into something false
 
 ## Writing, `idea`

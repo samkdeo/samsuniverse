@@ -188,6 +188,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Triages a large batch to a keeper set by fixing the purpose and number first, then grouping before ranking."
+    },
+    {
+      "name": "family-tradition-documenter",
+      "path": "skills/family-tradition-documenter",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Captures a family story, tradition, or skill in the holder's own voice, with the questions that produce detail."
     }
   ]
 }
