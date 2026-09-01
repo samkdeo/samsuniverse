@@ -174,6 +174,20 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Reworks a recipe for a constraint by identifying what each ingredient is doing, and says when the swap will not work."
+    },
+    {
+      "name": "home-project-scoper",
+      "path": "skills/home-project-scoper",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Turns a vague renovation wish into decisions ordered by when they are needed, a sequence, and the forgotten items."
+    },
+    {
+      "name": "photo-culling-assistant",
+      "path": "skills/photo-culling-assistant",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Triages a large batch to a keeper set by fixing the purpose and number first, then grouping before ranking."
     }
   ]
 }

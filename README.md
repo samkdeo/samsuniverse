@@ -73,6 +73,8 @@ They're built to hand off to each other: outline the arc first, draft against it
 
 | Skill | Status | What it does |
 |---|---|---|
+| [home-project-scoper](skills/home-project-scoper) | tested | Turns a vague renovation into decisions ordered by when they are actually needed, a sequence with the drying time visible, and the things people discover halfway through |
+| [photo-culling-assistant](skills/photo-culling-assistant) | tested | Fixes what the set is for before anything is judged, then groups before ranking — which is what stops a cull producing eleven versions of one moment |
 | [recipe-adapter](skills/recipe-adapter) | tested | Works out what each ingredient is actually doing before swapping it, and says when the recipe will not survive the change at all |
 | [habit-relapse-recovery-planner](skills/habit-relapse-recovery-planner) | tested | The restart plan for the moment right after a habit breaks: what actually broke it, how small week one has to be, and the minimum version that still counts |
 | [gift-idea-tracker](skills/gift-idea-tracker) | tested | Captures the hints people drop in their own words, with what is actually stopping them, and turns the record into one recommendation rather than five |

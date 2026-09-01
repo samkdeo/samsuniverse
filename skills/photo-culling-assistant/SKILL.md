@@ -9,6 +9,8 @@ Gives someone a way to get from a large batch to a set they will actually use. T
 
 It does not open, sort, rate, or process files. It produces the criteria, the order of passes, and the rules for the cases that stall people.
 
+**Start where the user actually is.** Most people arrive at this having already failed at it once: the batch has sat for weeks, they have looked at it too much, and someone is waiting. When that is the case, go to "When the cull has already stalled" first and lead with it, because the method below is not what they are missing and handing it over unaddressed is what gets it avoided again. The other two branches that override the default order are a cull shared between people and a batch where everyone in it has died.
+
 ## Step 1: Fix the purpose, because it is the whole criterion
 
 Ask what the set is for before anything else, and be specific, because the same batch yields completely different keepers.
@@ -22,9 +24,57 @@ The purposes that actually differ:
 - **A portfolio or a competition**, where the set is only as strong as its weakest image and the count should be brutal.
 - **A single print on a wall.**
 
-Then get the **number**, because a cull without a target is not a cull. Where the user has no number, give them the shape of one for the purpose and let them adjust: an album has as many slots as it has pages, a gallery has as many as someone will scroll, a portfolio has as few as it can survive on.
+Then get the **number**, because a cull without a target is not a cull, and do not leave this as a gesture. Where the user has no number, derive one with them rather than telling them there is a right answer.
+
+Three routes to it, in order of reliability:
+
+- **The container decides it** wherever there is one. An album has the number of slots its pages hold, a wall has a number of frames, a print run has a length, a client brief has a contracted count. This is the best kind of target because it is not a matter of taste.
+- **The audience's patience decides it** where there is no container. Ask how long someone will actually spend with the set, and how many images that is at the rate people really look, which is faster than photographers assume. A gallery nobody reaches the end of has failed regardless of what is in it.
+- **The user's own past sets decide it** where neither applies. Ask what a set they were happy with contained, since their instinct for their own work is better calibrated than any general figure.
+
+Where you offer a starting figure at all, say plainly that it is a starting point to adjust rather than a standard, and give the ratio alongside it — what proportion of the batch survives — because the ratio is what tells someone whether they are being unusually harsh or unusually generous, and it travels between projects in a way an absolute number does not. Expect the honest ratio to feel brutal; that is normal and worth saying before they start, because a user who thinks they are being ruthless at a mild ratio will stop too early.
 
 Where the purpose is genuinely several — some for the album, some for the archive — say that these are separate passes with different rules, not one pass with a blended standard. Trying to satisfy both at once is the commonest reason people end up keeping everything.
+
+## When the cull has already stalled
+
+This is when people actually ask. The batch has been sitting for weeks or months, they have looked at it too much, they no longer know what is good, and there is often someone waiting. Address that before the method, because it is the reason the method has not been applied.
+
+Say the useful true thing: the stall is not a judgement problem and it does not require fresh eyes to fix. Every step here is a comparison inside a small group or a check against a list, and neither needs the perspective they think they have lost. Over-familiarity makes the whole batch flat and makes absolute judgements impossible, which is exactly why the method compares within groups instead.
+
+Then make it finishable:
+
+- **Break it into sittings with a defined stopping point**, one group or one segment at a time, rather than an open-ended session. An unbounded task that has already been avoided will be avoided again.
+- **Start with the part that carries the delivery**, not with the beginning of the batch. The obligation is what is causing the dread, and reducing it first is what restores momentum.
+- **Set and announce a delivery date.** Where someone is waiting, telling them a date does more for a stalled cull than any technique here, because it converts an open avoidance into a bounded task. Say this explicitly.
+- **Fatigue is a real cause of bad culling**, and a set judged at the end of a long session is judged by a different person than the one who started it. Where the batch has been reviewed repeatedly, the frames the user is now sick of are frequently the strongest ones.
+
+## When more than one person is choosing
+
+Shared culls fail differently from solo ones, and the failure looks like a disagreement about photographs when it is almost never that.
+
+**The argument is usually an undeclared purpose.** Two people who have not agreed what they are making are answering different questions about every frame, so they will disagree on nearly all of them, permanently. Fixing the purpose and the number settles most of it before anyone looks at anything.
+
+**The second cause is that excluding feels like discarding.** People defend a photograph much harder when they believe leaving it out means losing it. Separating the set from the archive out loud — nothing is being thrown away, this is only about what goes in the thing being made — removes a surprising amount of heat, and it costs nothing.
+
+Then change the mechanics, because two people adjudicating every frame is the slowest possible arrangement and it puts them in opposition on each one:
+
+- **Divide the batch and work separately**, each bringing a shortlist to a shared pass. Comparing two shortlists is a different and much easier conversation than negotiating a batch.
+- **Give each person a small number of unarguable picks** that the other cannot challenge and no one has to justify. This is the single most effective device available, because the frames people cannot defend are exactly the ones they will fight for hardest.
+- **Agree the tie-break in advance**, so a genuine deadlock has a rule rather than a rematch.
+
+## When the whole batch is of someone who has died
+
+The rule that a flawed photograph of an irreplaceable moment stays is written for the occasional frame. When everyone in the batch is gone, or the set is being made because someone has died, it applies to all of it, and the rest of the method has to be re-derived rather than applied as written.
+
+What changes:
+
+- **The technical pass loses most of its authority.** It still removes the accidental frames, the lens caps, and the truly unusable, and it no longer removes a blurred or badly exposed photograph of a person, because there will be no more of those. Say this before the pass rather than after it.
+- **The one-per-group rule holds, and the grounds shift.** Pick for what the frame shows of the person rather than for its quality — the expression, the gesture, the moment they were not posing. A poor photograph of someone laughing beats a good one of them arranged.
+- **Coverage becomes the main criterion rather than a check.** The ordinary and unremarkable frames — the kitchen, the car, the unphotogenic Tuesday — are what land in a room, and they are systematically under-kept because nobody thought them worth keeping at the time.
+- **The person who took the photographs is usually the one missing from them.** Where that is the person being remembered, this is not a detail: it means far fewer frames of them exist than of anyone else, and finding those needs a deliberate search rather than a pass through the batch.
+- **Deletion is off the table entirely.** Do not raise it. The archive keeps everything.
+- **Where there is an occasion with a date**, the container decides the number and that is a mercy rather than a constraint: it converts an unbounded emotional task into a bounded one, and it should be settled first.
 
 ## Step 2: Take the technical pass first, and make it fast
 
@@ -113,4 +163,10 @@ And a short note on next time, because the cull is largely determined by how the
 - Running selection and deletion as one operation, which makes every choice feel irreversible.
 - Deleting anything before there is a second copy.
 - A maybe pile with no rule for emptying it.
+- Telling someone to get a target number without giving them any way to arrive at one.
+- Offering a figure as a standard rather than as a starting point with its ratio attached.
+- Handing the method to someone who has been avoiding the task for weeks, without addressing why it stalled or bounding the sittings.
+- Trusting judgement made at the end of a long session, or on a batch the user is by now sick of.
+- Treating a disagreement between two people as a disagreement about photographs, when it is an undeclared purpose or a fear that exclusion means loss.
+- Applying the technical pass unchanged to a batch where no more photographs of these people will ever exist.
 - Finishing with a folder of selects and never making the thing they were for.

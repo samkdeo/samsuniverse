@@ -29,6 +29,8 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 - [x] freelance-invoice-and-follow-up, `tested`
 - [x] tax-document-checklist-by-situation, `tested`
 - [x] recipe-adapter, `tested`
+- [x] home-project-scoper, `tested`
+- [x] photo-culling-assistant, `tested`
 
 ## Design and product, `idea`
 
@@ -55,8 +57,6 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 
 ## Life and household, `idea`
 
-- [ ] home-project-scoper: turns a vague renovation wish into a scoped, sequenced task list
-- [ ] photo-culling-assistant: triages a large batch down to a keeper set against stated criteria
 
 ---
 
