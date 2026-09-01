@@ -153,6 +153,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Prepares the walk-away, the levers other than price, the concession order, and the sentences to say."
+    },
+    {
+      "name": "freelance-invoice-and-follow-up",
+      "path": "skills/freelance-invoice-and-follow-up",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "An invoice built so it cannot be delayed, and a chase sequence that escalates on dates rather than on nerve."
     }
   ]
 }
