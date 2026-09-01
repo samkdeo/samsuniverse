@@ -98,7 +98,9 @@ There's a second round that matters just as much: running the skill on a scenari
 
 - The five children's-book skills have had three rounds: two prompts each, a re-test after fixes, and a generalization round on a different format or age band, plus fixes after that.
 - The four design and product skills have had two rounds: two prompts each and a re-test. They have not had a generalization round, so their coverage outside the cases they were tested on is less established.
-- Everything after those nine has had the full three rounds: two prompts, a re-test, and a generalization round in a domain the skill was not written against.
+- The twenty-one skills after those nine have each had three rounds: an opening round of realistic prompts, a re-test of a failed prompt after fixes, and a generalization round on a scenario in a domain the skill was not written against, with fixes after that too. Most had two prompts in the opening round; a few had one, and for those the total is three test prompts rather than four.
+
+Every one of the twenty-one failed something on the first round, and most failed the generalization round on something separate. The failures were rarely about the subject matter. Three shapes came up again and again: a case advertised in the skill's own frontmatter that the body had no procedure for, so a fresh agent confidently ran the wrong one; a silent assumption about who is involved — one recipient, one decider, a business rather than a person, a living author who can be asked; and an instruction to produce a number with no method attached, which reliably produced an invented constant presented as a measurement.
 
 ## Structure
 
