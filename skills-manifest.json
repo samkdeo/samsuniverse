@@ -146,6 +146,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Extracts the few ideas from a book worth keeping, tested against what the reader believes and will do."
+    },
+    {
+      "name": "contract-negotiation-prep",
+      "path": "skills/contract-negotiation-prep",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Prepares the walk-away, the levers other than price, the concession order, and the sentences to say."
     }
   ]
 }

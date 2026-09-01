@@ -25,6 +25,7 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 - [x] spaced-repetition-deck-builder, `tested`
 - [x] explain-like-im-at-my-level, `tested`
 - [x] book-notes-synthesizer, `tested`
+- [x] contract-negotiation-prep, `tested`
 
 ## Design and product, `idea`
 
@@ -48,7 +49,6 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 
 ## Money and admin, `idea`
 
-- [ ] contract-negotiation-prep: talking points and fallback positions for rate and scope
 - [ ] freelance-invoice-and-follow-up: invoices plus an escalating, professional chase schedule
 - [ ] tax-document-checklist-by-situation: what you need to gather, by income type. Organization, not advice
 

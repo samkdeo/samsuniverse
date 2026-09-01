@@ -53,6 +53,12 @@ They're built to hand off to each other: outline the arc first, draft against it
 | [disagreement-de-escalator](skills/disagreement-de-escalator) | tested | Lowers the temperature in a heated thread without giving up the position: concedes what is genuinely true, strips the escalators, and aims at an outcome rather than at winning |
 | [decision-journal](skills/decision-journal) | tested | Records a decision and a falsifiable prediction while it is still open, then scores the prediction later and separates a bad decision from bad luck |
 
+## Money and admin
+
+| Skill | Status | What it does |
+|---|---|---|
+| [contract-negotiation-prep](skills/contract-negotiation-prep) | tested | The walk-away by arithmetic, the levers that are not the rate, the order concessions get traded in, and the sentences to say when the number is questioned |
+
 ## Learning
 
 | Skill | Status | What it does |
