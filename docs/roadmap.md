@@ -22,6 +22,7 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 - [x] cold-outreach-personalizer, `tested`
 - [x] disagreement-de-escalator, `tested`
 - [x] long-form-editor-for-voice, `tested`
+- [x] spaced-repetition-deck-builder, `tested`
 
 ## Design and product, `idea`
 
@@ -43,7 +44,6 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 
 ## Learning, `idea`
 
-- [ ] spaced-repetition-deck-builder: turns material into a review schedule, not just a pile of cards
 - [ ] explain-like-im-at-my-level: calibrates explanation depth from a short diagnostic
 
 ## Money and admin, `idea`

@@ -125,6 +125,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Edits toward one writer's actual voice, profiled from samples, instead of toward generic good prose."
+    },
+    {
+      "name": "spaced-repetition-deck-builder",
+      "path": "skills/spaced-repetition-deck-builder",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Decides what belongs in spaced repetition, writes cards that survive months, and states the daily load before it is paid."
     }
   ]
 }
