@@ -50,6 +50,7 @@ They're built to hand off to each other: outline the arc first, draft against it
 
 | Skill | Status | What it does |
 |---|---|---|
+| [co-parenting-message-drafter](skills/co-parenting-message-drafter) | tested | Logistics only, nothing to react to, and a clear decision about whether to reply at all — written so it reads well to a stranger later |
 | [kid-question-answerer](skills/kid-question-answerer) | tested | An honest answer an adult can actually say out loud, without simplifying into something the child will later have to unlearn |
 | [family-tradition-documenter](skills/family-tradition-documenter) | tested | Records a family story, tradition, or hands-on skill in the voice of the person who holds it, with the questions that produce specifics rather than an outline |
 | [disagreement-de-escalator](skills/disagreement-de-escalator) | tested | Lowers the temperature in a heated thread without giving up the position: concedes what is genuinely true, strips the escalators, and aims at an outcome rather than at winning |

@@ -202,6 +202,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Gives an adult a true, age-pitched answer to a child's question, plus the follow-ups and one thing not to say."
+    },
+    {
+      "name": "co-parenting-message-drafter",
+      "path": "skills/co-parenting-message-drafter",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Drafts a co-parent message that stays on logistics, gives no opening to a fight, and reads well to a third party."
     }
   ]
 }
