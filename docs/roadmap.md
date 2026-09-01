@@ -27,6 +27,7 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 - [x] book-notes-synthesizer, `tested`
 - [x] contract-negotiation-prep, `tested`
 - [x] freelance-invoice-and-follow-up, `tested`
+- [x] tax-document-checklist-by-situation, `tested`
 
 ## Design and product, `idea`
 
@@ -50,7 +51,6 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 
 ## Money and admin, `idea`
 
-- [ ] tax-document-checklist-by-situation: what you need to gather, by income type. Organization, not advice
 
 ## Life and household, `idea`
 

@@ -57,6 +57,7 @@ They're built to hand off to each other: outline the arc first, draft against it
 
 | Skill | Status | What it does |
 |---|---|---|
+| [tax-document-checklist-by-situation](skills/tax-document-checklist-by-situation) | tested | What to gather, who issues it, and which records stop being obtainable — derived from actual income sources. Organisation only, never rates or treatment |
 | [freelance-invoice-and-follow-up](skills/freelance-invoice-and-follow-up) | tested | An invoice with no excuse left in it, and a chase sequence that runs on dates rather than on nerve — including where chasing stops |
 | [contract-negotiation-prep](skills/contract-negotiation-prep) | tested | The walk-away by arithmetic, the levers that are not the rate, the order concessions get traded in, and the sentences to say when the number is questioned |
 

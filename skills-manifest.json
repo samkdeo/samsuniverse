@@ -160,6 +160,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "An invoice built so it cannot be delayed, and a chase sequence that escalates on dates rather than on nerve."
+    },
+    {
+      "name": "tax-document-checklist-by-situation",
+      "path": "skills/tax-document-checklist-by-situation",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Builds a gathering list from actual income sources and events. Organisation only, never rates, treatment, or deadlines."
     }
   ]
 }
