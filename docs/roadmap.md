@@ -8,6 +8,32 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 - [x] stakeholder-interview-synthesizer, `tested`
 - [x] feature-flag-rollout-planner, `tested`
 - [x] naming-and-taxonomy-checker, `tested`
+- [x] story-arc-for-young-readers, `tested`
+- [x] picture-book-writer, `tested`
+- [x] character-bible-builder, `tested`
+- [x] childrens-book-illustration-brief, `tested`
+- [x] read-aloud-pacing-checker, `tested`
+- [x] decision-journal, `tested`
+- [x] habit-relapse-recovery-planner, `tested`
+- [x] gift-idea-tracker, `tested`
+- [x] travel-packing-by-trip-type, `tested`
+- [x] subscription-audit, `tested`
+- [x] eulogy-and-toast-writer, `tested`
+- [x] cold-outreach-personalizer, `tested`
+- [x] disagreement-de-escalator, `tested`
+- [x] long-form-editor-for-voice, `tested`
+- [x] spaced-repetition-deck-builder, `tested`
+- [x] explain-like-im-at-my-level, `tested`
+- [x] book-notes-synthesizer, `tested`
+- [x] contract-negotiation-prep, `tested`
+- [x] freelance-invoice-and-follow-up, `tested`
+- [x] tax-document-checklist-by-situation, `tested`
+- [x] recipe-adapter, `tested`
+- [x] home-project-scoper, `tested`
+- [x] photo-culling-assistant, `tested`
+- [x] family-tradition-documenter, `tested`
+- [x] kid-question-answerer, `tested`
+- [x] co-parenting-message-drafter, `tested`
 
 ## Design and product, `idea`
 
@@ -19,14 +45,18 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 
 ## Working with other people, `idea`
 
-- [ ] disagreement-de-escalator: lowers the temperature in a heated thread without capitulating
-- [ ] decision-journal: logs a decision and its reasoning, then prompts a calibration review later
-- [ ] cold-outreach-personalizer: genuinely specific opening lines instead of templated flattery
 
 ## Writing, `idea`
 
-- [ ] long-form-editor-for-voice: edits toward a person's established voice rather than a generic improvement
-- [ ] book-notes-synthesizer: extracts the three to five ideas worth keeping after finishing a book
+
+## Learning, `idea`
+
+
+## Money and admin, `idea`
+
+
+## Life and household, `idea`
+
 
 ---
 

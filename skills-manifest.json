@@ -62,6 +62,153 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Reviews a manuscript for read-aloud rhythm and page-turn pacing."
+    },
+    {
+      "name": "decision-journal",
+      "path": "skills/decision-journal",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Logs a decision with its reasoning and a scoreable prediction, then runs the calibration review later."
+    },
+    {
+      "name": "habit-relapse-recovery-planner",
+      "path": "skills/habit-relapse-recovery-planner",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Builds the restart plan for the moment right after a habit breaks, sized by cause rather than by a fixed cut."
+    },
+    {
+      "name": "gift-idea-tracker",
+      "path": "skills/gift-idea-tracker",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Captures gift hints in the person's own words with date and blocker, then turns the record into a choice."
+    },
+    {
+      "name": "travel-packing-by-trip-type",
+      "path": "skills/travel-packing-by-trip-type",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Derives a packing list from the trip's activity blocks, real forecast, container and wash cycle, and reviews an existing list for absences."
+    },
+    {
+      "name": "subscription-audit",
+      "path": "skills/subscription-audit",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Turns recurring charges into a dated cancel, downgrade, or reprice decision per line, with the method attached."
+    },
+    {
+      "name": "eulogy-and-toast-writer",
+      "path": "skills/eulogy-and-toast-writer",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Drafts eulogies, toasts, and leaving speeches from specifics rather than adjectives, in the speaker's own voice."
+    },
+    {
+      "name": "cold-outreach-personalizer",
+      "path": "skills/cold-outreach-personalizer",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Makes the specific detail in a cold message the reason it exists, and never invents research about a real person."
+    },
+    {
+      "name": "disagreement-de-escalator",
+      "path": "skills/disagreement-de-escalator",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Drafts a reply that concedes tone and holds substance, strips the structural escalators, and aims at a stated outcome."
+    },
+    {
+      "name": "long-form-editor-for-voice",
+      "path": "skills/long-form-editor-for-voice",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Edits toward one writer's actual voice, profiled from samples, instead of toward generic good prose."
+    },
+    {
+      "name": "spaced-repetition-deck-builder",
+      "path": "skills/spaced-repetition-deck-builder",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Decides what belongs in spaced repetition, writes cards that survive months, and states the daily load before it is paid."
+    },
+    {
+      "name": "explain-like-im-at-my-level",
+      "path": "skills/explain-like-im-at-my-level",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Finds the person's actual starting point and the purpose, then explains to the specific gap rather than to a level."
+    },
+    {
+      "name": "book-notes-synthesizer",
+      "path": "skills/book-notes-synthesizer",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Extracts the few ideas from a book worth keeping, tested against what the reader believes and will do."
+    },
+    {
+      "name": "contract-negotiation-prep",
+      "path": "skills/contract-negotiation-prep",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Prepares the walk-away, the levers other than price, the concession order, and the sentences to say."
+    },
+    {
+      "name": "freelance-invoice-and-follow-up",
+      "path": "skills/freelance-invoice-and-follow-up",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "An invoice built so it cannot be delayed, and a chase sequence that escalates on dates rather than on nerve."
+    },
+    {
+      "name": "tax-document-checklist-by-situation",
+      "path": "skills/tax-document-checklist-by-situation",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Builds a gathering list from actual income sources and events. Organisation only, never rates, treatment, or deadlines."
+    },
+    {
+      "name": "recipe-adapter",
+      "path": "skills/recipe-adapter",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Reworks a recipe for a constraint by identifying what each ingredient is doing, and says when the swap will not work."
+    },
+    {
+      "name": "home-project-scoper",
+      "path": "skills/home-project-scoper",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Turns a vague renovation wish into decisions ordered by when they are needed, a sequence, and the forgotten items."
+    },
+    {
+      "name": "photo-culling-assistant",
+      "path": "skills/photo-culling-assistant",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Triages a large batch to a keeper set by fixing the purpose and number first, then grouping before ranking."
+    },
+    {
+      "name": "family-tradition-documenter",
+      "path": "skills/family-tradition-documenter",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Captures a family story, tradition, or skill in the holder's own voice, with the questions that produce detail."
+    },
+    {
+      "name": "kid-question-answerer",
+      "path": "skills/kid-question-answerer",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Gives an adult a true, age-pitched answer to a child's question, plus the follow-ups and one thing not to say."
+    },
+    {
+      "name": "co-parenting-message-drafter",
+      "path": "skills/co-parenting-message-drafter",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Drafts a co-parent message that stays on logistics, gives no opening to a fight, and reads well to a third party."
     }
   ]
 }

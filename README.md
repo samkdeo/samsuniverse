@@ -38,6 +38,52 @@ You don't invoke a skill by hand. Claude loads it when your request matches its 
 
 They're built to hand off to each other: outline the arc first, draft against it, then check the pacing.
 
+## Writing and speaking
+
+| Skill | Status | What it does |
+|---|---|---|
+| [eulogy-and-toast-writer](skills/eulogy-and-toast-writer) | tested | Eulogies, toasts, and leaving speeches built from specific things that happened, sized to the slot, in the speaker's own vocabulary |
+| [long-form-editor-for-voice](skills/long-form-editor-for-voice) | tested | Profiles a writer's voice from countable features in their real work, then edits against that rather than toward generic good prose |
+| [cold-outreach-personalizer](skills/cold-outreach-personalizer) | tested | Makes the specific detail the reason the message exists rather than decoration on it, and never invents a fact about a real person to make an opening work |
+
+## Working with other people
+
+| Skill | Status | What it does |
+|---|---|---|
+| [co-parenting-message-drafter](skills/co-parenting-message-drafter) | tested | Logistics only, nothing to react to, and a clear decision about whether to reply at all — written so it reads well to a stranger later |
+| [kid-question-answerer](skills/kid-question-answerer) | tested | An honest answer an adult can actually say out loud, without simplifying into something the child will later have to unlearn |
+| [family-tradition-documenter](skills/family-tradition-documenter) | tested | Records a family story, tradition, or hands-on skill in the voice of the person who holds it, with the questions that produce specifics rather than an outline |
+| [disagreement-de-escalator](skills/disagreement-de-escalator) | tested | Lowers the temperature in a heated thread without giving up the position: concedes what is genuinely true, strips the escalators, and aims at an outcome rather than at winning |
+| [decision-journal](skills/decision-journal) | tested | Records a decision and a falsifiable prediction while it is still open, then scores the prediction later and separates a bad decision from bad luck |
+
+## Money and admin
+
+| Skill | Status | What it does |
+|---|---|---|
+| [tax-document-checklist-by-situation](skills/tax-document-checklist-by-situation) | tested | What to gather, who issues it, and which records stop being obtainable — derived from actual income sources. Organisation only, never rates or treatment |
+| [freelance-invoice-and-follow-up](skills/freelance-invoice-and-follow-up) | tested | An invoice with no excuse left in it, and a chase sequence that runs on dates rather than on nerve — including where chasing stops |
+| [contract-negotiation-prep](skills/contract-negotiation-prep) | tested | The walk-away by arithmetic, the levers that are not the rate, the order concessions get traded in, and the sentences to say when the number is questioned |
+
+## Learning
+
+| Skill | Status | What it does |
+|---|---|---|
+| [book-notes-synthesizer](skills/book-notes-synthesizer) | tested | The two or three ideas from a book actually worth keeping, sorted by whether they confirm, contradict, or name something — and what did not survive the test |
+| [explain-like-im-at-my-level](skills/explain-like-im-at-my-level) | tested | Calibrates to what the person already knows and to what they need the explanation *for*, which sets the depth more than their level does |
+| [spaced-repetition-deck-builder](skills/spaced-repetition-deck-builder) | tested | Decides what should not be a card, writes the ones that survive being asked in four months, and states the daily review load before anyone signs up to it |
+
+## Life and household
+
+| Skill | Status | What it does |
+|---|---|---|
+| [home-project-scoper](skills/home-project-scoper) | tested | Turns a vague renovation into decisions ordered by when they are actually needed, a sequence with the drying time visible, and the things people discover halfway through |
+| [photo-culling-assistant](skills/photo-culling-assistant) | tested | Fixes what the set is for before anything is judged, then groups before ranking — which is what stops a cull producing eleven versions of one moment |
+| [recipe-adapter](skills/recipe-adapter) | tested | Works out what each ingredient is actually doing before swapping it, and says when the recipe will not survive the change at all |
+| [habit-relapse-recovery-planner](skills/habit-relapse-recovery-planner) | tested | The restart plan for the moment right after a habit breaks: what actually broke it, how small week one has to be, and the minimum version that still counts |
+| [gift-idea-tracker](skills/gift-idea-tracker) | tested | Captures the hints people drop in their own words, with what is actually stopping them, and turns the record into one recommendation rather than five |
+| [travel-packing-by-trip-type](skills/travel-packing-by-trip-type) | tested | Builds the list from the trip's activity blocks, the real forecast, the container and the wash cycle, and audits an existing list for what is missing before cutting anything |
+| [subscription-audit](skills/subscription-audit) | tested | Turns recurring charges into a dated decision per line, with the cancellation method attached and the export done before anything is switched off |
+
 Status key: `idea` not written, `draft` written but untested, `tested` run against real prompts by a fresh agent, `stable` used repeatedly over time.
 
 ## What "tested" means here
@@ -52,6 +98,9 @@ There's a second round that matters just as much: running the skill on a scenari
 
 - The five children's-book skills have had three rounds: two prompts each, a re-test after fixes, and a generalization round on a different format or age band, plus fixes after that.
 - The four design and product skills have had two rounds: two prompts each and a re-test. They have not had a generalization round, so their coverage outside the cases they were tested on is less established.
+- The twenty-one skills after those nine have each had three rounds: an opening round of realistic prompts, a re-test of a failed prompt after fixes, and a generalization round on a scenario in a domain the skill was not written against, with fixes after that too. Most had two prompts in the opening round; a few had one, and for those the total is three test prompts rather than four.
+
+Every one of the twenty-one failed something on the first round, and most failed the generalization round on something separate. The failures were rarely about the subject matter. Three shapes came up again and again: a case advertised in the skill's own frontmatter that the body had no procedure for, so a fresh agent confidently ran the wrong one; a silent assumption about who is involved — one recipient, one decider, a business rather than a person, a living author who can be asked; and an instruction to produce a number with no method attached, which reliably produced an invented constant presented as a measurement.
 
 ## Structure
 
