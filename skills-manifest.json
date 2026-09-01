@@ -139,6 +139,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Finds the person's actual starting point and the purpose, then explains to the specific gap rather than to a level."
+    },
+    {
+      "name": "book-notes-synthesizer",
+      "path": "skills/book-notes-synthesizer",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Extracts the few ideas from a book worth keeping, tested against what the reader believes and will do."
     }
   ]
 }

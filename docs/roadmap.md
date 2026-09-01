@@ -24,6 +24,7 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 - [x] long-form-editor-for-voice, `tested`
 - [x] spaced-repetition-deck-builder, `tested`
 - [x] explain-like-im-at-my-level, `tested`
+- [x] book-notes-synthesizer, `tested`
 
 ## Design and product, `idea`
 
@@ -41,7 +42,6 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 
 ## Writing, `idea`
 
-- [ ] book-notes-synthesizer: extracts the three to five ideas worth keeping after finishing a book
 
 ## Learning, `idea`
 

@@ -57,6 +57,7 @@ They're built to hand off to each other: outline the arc first, draft against it
 
 | Skill | Status | What it does |
 |---|---|---|
+| [book-notes-synthesizer](skills/book-notes-synthesizer) | tested | The two or three ideas from a book actually worth keeping, sorted by whether they confirm, contradict, or name something — and what did not survive the test |
 | [explain-like-im-at-my-level](skills/explain-like-im-at-my-level) | tested | Calibrates to what the person already knows and to what they need the explanation *for*, which sets the depth more than their level does |
 | [spaced-repetition-deck-builder](skills/spaced-repetition-deck-builder) | tested | Decides what should not be a card, writes the ones that survive being asked in four months, and states the daily review load before anyone signs up to it |
 
