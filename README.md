@@ -73,6 +73,7 @@ They're built to hand off to each other: outline the arc first, draft against it
 
 | Skill | Status | What it does |
 |---|---|---|
+| [recipe-adapter](skills/recipe-adapter) | tested | Works out what each ingredient is actually doing before swapping it, and says when the recipe will not survive the change at all |
 | [habit-relapse-recovery-planner](skills/habit-relapse-recovery-planner) | tested | The restart plan for the moment right after a habit breaks: what actually broke it, how small week one has to be, and the minimum version that still counts |
 | [gift-idea-tracker](skills/gift-idea-tracker) | tested | Captures the hints people drop in their own words, with what is actually stopping them, and turns the record into one recommendation rather than five |
 | [travel-packing-by-trip-type](skills/travel-packing-by-trip-type) | tested | Builds the list from the trip's activity blocks, the real forecast, the container and the wash cycle, and audits an existing list for what is missing before cutting anything |

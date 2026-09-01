@@ -167,6 +167,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Builds a gathering list from actual income sources and events. Organisation only, never rates, treatment, or deadlines."
+    },
+    {
+      "name": "recipe-adapter",
+      "path": "skills/recipe-adapter",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Reworks a recipe for a constraint by identifying what each ingredient is doing, and says when the swap will not work."
     }
   ]
 }
