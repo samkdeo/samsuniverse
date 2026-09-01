@@ -118,6 +118,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Drafts a reply that concedes tone and holds substance, strips the structural escalators, and aims at a stated outcome."
+    },
+    {
+      "name": "long-form-editor-for-voice",
+      "path": "skills/long-form-editor-for-voice",
+      "status": "tested",
+      "version": "0.1.0",
+      "description": "Edits toward one writer's actual voice, profiled from samples, instead of toward generic good prose."
     }
   ]
 }

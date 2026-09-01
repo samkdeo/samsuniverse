@@ -21,6 +21,7 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 - [x] eulogy-and-toast-writer, `tested`
 - [x] cold-outreach-personalizer, `tested`
 - [x] disagreement-de-escalator, `tested`
+- [x] long-form-editor-for-voice, `tested`
 
 ## Design and product, `idea`
 
@@ -38,7 +39,6 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 
 ## Writing, `idea`
 
-- [ ] long-form-editor-for-voice: edits toward a person's established voice rather than a generic improvement
 - [ ] book-notes-synthesizer: extracts the three to five ideas worth keeping after finishing a book
 
 ## Learning, `idea`
