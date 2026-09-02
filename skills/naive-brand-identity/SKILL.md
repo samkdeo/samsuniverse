@@ -1,6 +1,6 @@
 ---
 name: naive-brand-identity
-description: Builds brand identities in the naive hand-drawn style — wobbly single-weight line illustration, rounded and blobby logotypes, handwriting and script wordmarks, sticker sets, and repeating patterns — and specifies them as a system that survives being drawn twice. Covers the pen rules that keep a set coherent, palettes verified by computed contrast rather than eyeballed, type pairings with the licensing and character-set traps named, seamless pattern construction, and the three separate accessibility regimes this style runs into — labelling rules for products and packaging, signage standards for physical premises, and WCAG for screens. Use whenever someone wants a hand-drawn, doodle, childlike, naive, marker, crayon, sticker, cutesy or illustrated brand, a bold rounded or blobby logotype, brand colours that are "ADA friendly", accessible or WCAG compliant, font pairings or brand guidelines for an illustrated brand, or brand patterns, seamless repeats, packaging illustration or a sticker sheet. Trigger on "hand drawn logo", "doodle branding", "cute packaging", "make my brand look hand made", "accessible brand palette", "font pairing for my logo", and on any request to build or extend a visual identity in this style.
+description: Builds brand identities in the naive hand-drawn style — wobbly single-weight line illustration, rounded and blobby logotypes, handwriting and script wordmarks, sticker sets, and repeating patterns — and specifies them as a system that survives being drawn twice. Covers the pen rules that keep a set coherent, palettes verified by computed contrast rather than eyeballed, type pairings with the licensing and character-set traps named, seamless pattern construction, colour that survives conversion to print, a check on whether the look actually suits the buyer, and the three separate accessibility regimes this style runs into — labelling rules for products and packaging, signage standards for physical premises, and WCAG for screens. Use whenever someone wants a hand-drawn, doodle, childlike, naive, marker, crayon, sticker, cutesy or illustrated brand, a bold rounded or blobby logotype, brand colours that are "ADA friendly", accessible or WCAG compliant, font pairings or brand guidelines for an illustrated brand, or brand patterns, seamless repeats, packaging illustration or a sticker sheet. Trigger on "hand drawn logo", "doodle branding", "cute packaging", "make my brand look hand made", "accessible brand palette", "font pairing for my logo", and on any request to build or extend a visual identity in this style.
 ---
 
 # Naive Brand Identity
@@ -16,6 +16,18 @@ Most requests here are small, and a small one gets a small answer. Someone askin
 Run the full sequence when the request is to build an identity. When a system already exists, scale the extraction in Step 1a to the size of what is being added rather than running it whole: a body of new work earns the full measurement pass, while a single asset needs only the rules that asset touches, read off the existing artwork in a couple of minutes. Nobody adding one pattern needs a font-licence audit.
 
 When the request is broad but the brand is thin, do not answer with a questionnaire. Two things actually change the output — what the brand sells, and where the identity has to live — and any brief detailed enough to trigger a full build has usually answered both already. Ask only if one is genuinely missing. Everything still ambiguous after that gets a stated assumption rather than a question: say what you are building on and what it would change if wrong, then build. Proceeding on a stated assumption beats going back for a third question, and the user will correct an assumption far faster than they will answer an interrogation.
+
+This bars questions that gate the answer, not the shortlist of real inputs you need to finalise it. Building on stand-ins and closing with "send me your actual hex codes, your market, and your converter's minimum line width and I will finalise these three things" is the correct shape. Asking for them first and delivering nothing is not.
+
+### Say once whether the style fits, then build what was asked
+
+This aesthetic carries a message before it says anything: approachable, small-batch, unintimidating, low-stakes, warm. That is an asset in most categories and a liability in a few, and the request never mentions it because the user has already fallen for the look.
+
+Two questions decide whether it is worth a paragraph. Who is buying, and what does the purchase feel like to them? Where a product sits against something people find difficult — a medical or health experience, money trouble, legal exposure, grief, a body they are unhappy with — the same drawings that read as friendly on a snack can read as making light of it, or as talking down to a buyer who is already tired of being talked down to. That risk is highest exactly where a brand reaches for this style hardest, because the style is chosen to make the difficult thing feel lighter.
+
+Say it in a paragraph, name what the look signals and who it might lose, offer the version that keeps the warmth without the childishness — the same hand, drawn at a restrained scale, on an adult palette, with more space and fewer faces — and then build what they asked for. This is a judgement to raise, not a veto, and a user who has heard it and still wants the doodles has made a legitimate decision.
+
+The buyer also changes the numbers, not just the tone. Near vision declines from the mid-forties in more or less everyone, so an older buyer band tightens the legibility budget on an identical design: the reading zones need more size and more contrast margin than the same layout would need for a younger audience, and small printed text is read in a shop, at arm's length, often without glasses. Where the audience skews older, treat the thresholds in Step 3 as a floor to clear comfortably rather than a target to meet.
 
 ### Numbers you are not allowed to invent
 
@@ -37,7 +49,7 @@ This changes the deliverable, not just its wording. Say which one you are produc
 
 **Vector drawn by hand, or SVG written directly**, is realistic for patterns, geometric marks, and simple objects, and unrealistic for expressive figures. Write the patterns as SVG. Do not promise a charming wonky character in path data.
 
-Most brands end up mixed, and in a mixed brief this is the load-bearing decision rather than a preamble to it. Set it out as a table of every asset against its route before designing anything, because the routes have different constraints and an asset quietly assigned to the wrong one is discovered late. Patterns and geometric marks go to vector, figures to drawing or generation — and anything carrying a letter goes to neither, for the reason in Step 2b.
+Most brands end up mixed, and in a mixed brief this is the load-bearing decision rather than a preamble to it. Set it out as a table of every asset against its route before designing anything, because the routes have different constraints and an asset quietly assigned to the wrong one is discovered late. Patterns and geometric marks go to vector, figures to drawing or generation — and anything carrying a letter goes to hand-lettering or a real font, never to a generator, for the reason in Step 2b.
 
 ## Step 1a: If the system already exists
 
@@ -58,6 +70,20 @@ Then validate the extraction with a **re-draw test**, which is available only in
 
 **Check what was actually inherited**, because "we have the files" is a leaky claim. Confirm the right to make derivative work, since commissioned illustration is often licensed rather than assigned. Check which fonts are in the files and whether their licences transfer. Check the sources are complete — linked assets, brushes and custom appearances travel badly. None of these is likely to bite, and all are cheap now and expensive after the work is done.
 
+## Step 1b: If it goes on a physical thing, list the surfaces first
+
+Skip on a screens-only brand. Otherwise do it before the pen, because the surfaces decide the size the artwork is read at, and that is what the line weight is derived from.
+
+**Write down every format and what each one does.** Front of pack sells and is where the identity performs; back or base informs and is where a regime governs; and on a small format the two collide on one face, which is the constraint that shapes everything else.
+
+**Each format has geometry that cuts into the design, and it is not negotiable after the fact.** A wrapped label has a seam and a curve, so nothing that has to be read whole may cross the seam, and artwork approaching the curve compresses before it disappears. A sachet has seal zones on its edges and a tear notch, all of which eat live area that looks available in a flat layout. A carton has panels, glue flaps and a dieline, and the flaps are structure rather than design surface. Get the dieline or template from the converter before designing rather than after, because a layout built without one is redrawn, not adjusted.
+
+**Design the smallest format first.** What survives there works on the larger ones; the reverse fails, and it fails late, after the big surface has been approved and everyone is attached to it. The smallest format is also usually where the regime is hardest to satisfy, since the mandatory information does not shrink with the pack.
+
+**Decide the panel hierarchy once** — what appears on every format, what only on the largest — so the small pack is a deliberate reduction rather than whatever happened to fit.
+
+**Treat the finish as a decision.** Matte, gloss, soft-touch and spot varnish each change how the colour reads and how legible small type is, a matte or soft-touch laminate measurably lowers contrast, and it is applied after every choice above was made. Name it early and account for it in Step 3 rather than discovering it on the proof.
+
 ## Step 2: Fix the pen before you fix anything else
 
 **Decide and write down: line weight, terminals and joints, wobble amount, fill policy, figure proportions, face policy, the bans. Then run the two-object repeatability test.**
@@ -72,9 +98,9 @@ Settle and record each of these:
 
   One weight across the whole set is the default and the strongest choice. If you allow two, define exactly what the second is for, such as interior detail only, never outline — and note that interior detail is thinner than the outline in most drawings, so it hits the production floor first.
 - **Terminal and joint**, meaning round or flat line ends and whether corners are rounded. Rounded terminals read warm and childlike. Flat reads more editorial. Mixing them is what makes a set feel bought from three stock libraries.
-- **Wobble, and how much.** This is the defining variable of the style and the one described vaguely. Say it as deviation: a line that would be straight may drift up to about 2% of its own length, curves may be slightly asymmetric, circles may be off-round, and nothing closes perfectly. Then say the thing that matters more: the wobble is *consistent in amount* across the set. Random amounts of wobble is not what a real hand does. A hand is consistently imprecise.
+- **Wobble, and how much.** This is the defining variable of the style and the one described vaguely. Say it as deviation rather than as a feeling. Around two per cent of a line's own length is a reasonable place to start; draw it, look at it at real size, and tune from there, because the right amount depends on the line weight and the scale the artwork is read at. Curves may be slightly asymmetric, circles may be off-round, and nothing closes perfectly. Then say the thing that matters more: the wobble is *consistent in amount* across the set. Random amounts of wobble is not what a real hand does. A hand is consistently imprecise.
 - **Fill policy.** Outline only, solid fill, or outline plus a single offset fill that deliberately misses its edges. Pick one. The offset fill is a strong, cheap way to signal "printed by hand" and it needs its own rule for how far it may miss, or it turns into a mistake.
-- **Proportion rules for figures.** Naive figures are not badly drawn realistic figures. They are consistently distorted, and the distortion is the signature: heads large relative to bodies, hands and feet simplified to mittens or hooks, limbs of even thickness with no taper, no visible joints. Write the ratios you are using.
+- **Proportion rules for figures**, where there are figures — a botanical or object-based identity skips this rather than inventing a rule it will never apply. Naive figures are not badly drawn realistic figures. They are consistently distorted, and the distortion is the signature: heads large relative to bodies, hands and feet simplified to mittens or hooks, limbs of even thickness with no taper, no visible joints. Write the ratios you are using.
 - **Face policy.** Two dots and a line is a different brand from a face with a nose, a blush and eyebrows. This decides how much the character can emote later, so decide it against what the brand needs the character to do. Dots cannot look worried.
 - **What is banned.** Perspective, cast shadows, gradients, rendered volume, texture beyond a single flat grain, and outlines of varying weight within one drawing. Naming the bans is more useful than describing the goal, because these are exactly what an illustrator or a generator reverts to under pressure.
 
@@ -102,7 +128,7 @@ Generate the two repeatability-test subjects before anything else, for the same 
 
 Three things generators will not do reliably, so plan around them rather than fighting. They will not hold an exact line weight across assets, so trace each result to vector and set every path to the one weight — that normalising pass, not the prompt, is what makes separately generated assets read as one set. They will not produce a seamless tile, so build patterns in vector from generated elements rather than asking for the repeat. And they will not hand you a cut-out: expect an opaque rectangle, so background removal and any die line are vector work afterwards. Tracing conveniently solves resolution too, which otherwise bites when a raster result meets a print size.
 
-On budget, say plainly that a usable asset commonly takes several attempts and a difficult one can take many, so a set of ten is an evening rather than an hour. Give the user the shape of the cost rather than a fake average. Generate a surplus and cull rather than iterating one asset toward perfection: selecting six coherent results out of twenty is faster than forcing six individually, and it produces a better set, because you are choosing for consistency with each other instead of judging each one alone.
+On budget, give the shape of the cost rather than an average you do not have. A usable asset commonly takes several attempts and a difficult one takes many, and generation is the smaller half: the tracing and normalising pass below is usually the larger, and any estimate that leaves it out is wrong in the direction that matters. Say that the cost is dominated by the pass that comes after generation, and let the user time their first asset and multiply. Generate a surplus and cull rather than iterating one asset toward perfection: selecting six coherent results out of twenty is faster than forcing six individually, and it produces a better set, because you are choosing for consistency with each other instead of judging each one alone.
 
 ### Taking generated work to print
 
@@ -120,7 +146,7 @@ A palette is not accessible. A *pairing* is accessible, at a size, for a purpose
 
 ### Work out which regime the brand is actually in
 
-"ADA friendly" is what people say, and it collapses three different regimes with different rules. Establish which apply before quoting any threshold, because a brand can sit in all three at once with a different answer in each. Most brands in this style are on a product before they are anywhere else, so start there.
+"ADA friendly" is what people say, and it collapses three different regimes with different rules. Establish which apply before quoting any threshold, because a brand can sit in all three at once with a different answer in each. Then drop the ones that do not apply rather than covering them for completeness — a product brand with no premises does not need a paragraph on room signage, and including it to be thorough is padding a reply about a jar. Most brands in this style are on a product before they are anywhere else, so start there.
 
 **Products and packaging — labelling rules.** Food, drink, cosmetics, supplements and several other categories carry their own requirements for the information panel: minimum type sizes, permitted type styles, and a requirement that the panel contrast clearly with its background. These are stricter than WCAG in some respects, unrelated to it in others, and they vary by market and by category. They are also the regime this aesthetic violates most reliably, because a soft ink on a mid-tone panel is the look and is precisely what the rules exclude.
 
@@ -162,7 +188,7 @@ python3 scripts/contrast.py ground=#FBF4E9 ink=#1E2A3A accent=#7FBBD9
 python3 scripts/contrast.py --darken '#7FBBD9' '#FBF4E9'
 ```
 
-`--darken` answers the question that always follows a failure: it holds the brand hue and walks lightness down until the pairing clears 3:1, 4.5:1 and 7:1, so the text colour is derived from the brand rather than picked by eye. Use the script whenever you can execute code, and do the arithmetic explicitly when you cannot.
+`--darken` answers the question that always follows a failure: it holds the brand hue and walks lightness down until the pairing clears 3:1, 4.5:1 and 7:1, so the text colour is derived from the brand rather than picked by eye. It returns the *first* value clearing each tier, which means the 4.5 result sits fractionally above the line — fine on screen, and to be treated as failing on anything printed or read by an older audience, where the 7:1 result is the one to take. Use the script whenever you can execute code, and do the arithmetic explicitly when you cannot.
 
 ### When the colours arrive as words
 
@@ -184,8 +210,10 @@ Build it as roles, not as a row of swatches, because the roles are what get chec
 |---|---|---|
 | Ground | The dominant surface | Reference for everything on it |
 | Ink | Line art and body text on ground | 4.5:1 against ground where it sets text; none where the line art is decorative |
-| Accent | Highlight, one or two only | 3:1 if it carries meaning, none if decorative |
+| Accent | Highlight; one or two, unless a product line needs one per variant | 3:1 where it distinguishes variants, none where decorative |
 | Utility | Error, warning, success | 4.5:1 plus a non-colour signal |
+
+A product line is the common reason to exceed two accents: a colour per SKU is how shoppers find the variant they bought last time. Treat that set as its own problem rather than as more accents. Each variant colour has to be distinguishable from every other variant colour, not merely from the ground — check them against each other in the matrix, since two pastels can each sit prettily on cream and be indistinguishable side by side on a shelf. And because a variant colour is doing identification work, it is vocabulary, so pair it with a distinct mark or word rather than relying on the colour alone.
 
 Then produce the **pair matrix**: every foreground against every ground you will actually use, with the computed ratio and the verdict at each threshold, and a plain statement of what each pair may be used for. "Accent on ground: 2.4:1 — decorative shapes and the logotype only, never text, never an icon that is the only label." That sentence is the deliverable. A list of hex codes is not.
 
@@ -198,7 +226,21 @@ Do not resolve this by darkening the brand into something else. Resolve it struc
 Two more rules that get dropped:
 
 - Colour cannot be the only carrier of information, so if a state, a category or a status is colour-coded, it also needs a shape, a label, or a distinct hand-drawn mark. This style is well placed to do that, because it already has a mark vocabulary.
-- Specify how the palette inverts. Dark grounds are not the light palette with the values swapped; the same hue at the same lightness reads heavier on dark, and thin naive line work in particular thickens and closes up. State the ink for dark ground explicitly and re-run the matrix for it.
+- Specify how the palette inverts. On screen that is a mode; in print it is a substrate and ink decision made once per format, and reversing fine line work out of a dark ink is a production question for the printer as much as a design one, since thin reversed lines fill in. Either way, dark grounds are not the light palette with the values swapped; the same hue at the same lightness reads heavier on dark, and thin naive line work in particular thickens and closes up. State the ink for dark ground explicitly and re-run the matrix for it.
+
+### Taking the palette to print
+
+Everything computed above is sRGB, and a printed pack is not sRGB. Skip this on a screens-only brand; on anything printed it is the step between a verified palette and a correct one.
+
+**Convert deliberately rather than letting it happen.** Soft, light, desaturated colours — this style's entire palette — are the ones that move most in conversion, and pastels are where a chalky cream turns muddy or picks up a cast nobody chose. Specify the print values yourself and put them in the guidelines beside the screen values, so the brand carries a mapped pair for each colour rather than one set of numbers that silently means something different on each surface.
+
+**Where a colour has to match across different materials, specify a spot colour rather than a process build.** The same build prints differently on a paper carton, a plastic film sachet and a wrapped label, and a customer holding two of your formats sees the mismatch immediately even though neither is wrong on its own. Spot inks cost more and are the cheap option here, because a brand colour that drifts by substrate is not a brand colour.
+
+**Then re-check any pairing that was near a threshold**, because the conversion moves the values and a pairing that only just cleared can land under. This is why margin matters more on print than the number does.
+
+**Get a physical proof on the actual substrate and finish before signing anything off.** A screen lies, a desktop print lies differently, and coating changes it again — a matte or soft-touch laminate knocks contrast down measurably, and it is applied after every decision above was made. Read the proof at arm's length in ordinary shop lighting, and where the audience skews older, have someone in that age band read it without reading glasses. That test costs nothing and finds what the arithmetic cannot.
+
+**What the print deliverable actually is.** On a printed surface the ratios screen and rank rather than certify: they eliminate pairings that cannot work and they cannot approve the ones that survive, because the governing standard is the labelling regime and the real test is the proof in the hand. So deliver three things rather than a matrix alone — the pair table with margin applied and near-threshold pairings treated as failures, the panel spec taken from the regime rather than from taste, and the proof test above with a named person to run it.
 
 ## Step 4: Type, where exactly one voice is allowed to be loud
 
@@ -244,7 +286,7 @@ Spirals and continuous line motifs sit in between: they carry the hand beautiful
 
 **Compensate the stroke when you scale.** Scaling a motif scales its outline with it, so a scale ladder built by scaling the tile silently breaks the one-weight rule the whole system rests on — a motif at 0.45 draws its line at 0.45 too, and the small end of your ladder is a lighter brand than the large end. Set each instance's stroke width to the base weight divided by its scale factor, so the apparent weight is identical at every size. This is the most common way a hand-drawn pattern violates its own pen rules, and it happens precisely to people following the scale-ladder advice below.
 
-The scaffolding, so it is not reinvented each time — replace the placeholder path with the motif and keep the mechanics:
+The mechanics below are the same wherever the pattern ends up; the SVG is how it ships to a screen, and for print you build the identical tile in the vector tool the artwork lives in. Replace the placeholder path with the motif and keep the structure:
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" width="360" height="360">
@@ -295,6 +337,9 @@ If the identity has to survive a handoff, name what a new designer must not chan
 
 These are the ones that survive following the steps above, not restatements of them.
 
+- **Executing an aesthetic brief that does not suit the buyer, without saying so once.** The user chose the look before they wrote to you, and the categories where it misfires are exactly the ones where it was chosen hardest. One paragraph, then build what they asked.
+- **Handing sRGB values to a press.** The computed matrix describes screen colour, and a printed pack is a conversion away from it, on a substrate, under a finish. A palette that was verified and never converted is not the palette being printed.
+- **Designing the largest format first**, so the small pack becomes whatever survived rather than a deliberate reduction, and the regime's mandatory content is discovered not to fit.
 - **Producing a beautifully structured answer full of invented numbers.** This file demands specifics, and the specifics it cannot supply are production minimums and regulatory figures. A rigorous-looking spec with a fabricated vinyl minimum in it is more dangerous than a vague one, because nobody checks it until the plates are cut. Mark every such number as a starting point with an owner.
 - **Stating a ratio and a point size that disagree.** A weight given both ways has to be reconciled, and unit conversion is where the contradiction hides. Two contradictory specs for one rule produce two different brands.
 - **Answering the accessibility question for the wrong regime.** A screen answer to a business whose exposure is its front door, or a WCAG ratio quoted at a nutrition panel as though it governed. Establish the regime before quoting a number.
