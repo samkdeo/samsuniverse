@@ -1,6 +1,6 @@
 ---
 name: naive-brand-identity
-description: Builds a brand identity in the naive, hand-drawn style — wobbly single-weight line illustration, rounded or blobby display logotypes, handwriting and script wordmarks, sticker sets, and repeating patterns — and specifies it as a system that survives being drawn twice. Covers the drawing rules that keep a set coherent, palettes checked against WCAG contrast thresholds rather than eyeballed, type pairings with the licensing and character-set traps named, and seamless pattern construction for stripes, spirals, dots, checks, squiggles, and abstract marks. Use this skill whenever someone wants a hand-drawn, doodle, childlike, naive, marker, crayon, sticker, cutesy, quirky, or illustrated brand, asks for a bold rounded or blobby logotype, wants brand colors that are "ADA friendly", accessible, or WCAG compliant, asks for font pairings or brand guidelines for an illustrated brand, or asks for brand patterns, seamless repeats, packaging illustration, or a sticker sheet. Trigger it on "hand drawn logo", "doodle branding", "naive illustration brand", "cute packaging", "make my brand look hand made", "accessible brand palette", "font pairing for my logo", and on any request to build or extend a visual identity in this style.
+description: Builds brand identities in the naive hand-drawn style — wobbly single-weight line illustration, rounded and blobby logotypes, handwriting and script wordmarks, sticker sets, and repeating patterns — and specifies them as a system that survives being drawn twice. Covers the pen rules that keep a set coherent, palettes verified by computed contrast rather than eyeballed, type pairings with the licensing and character-set traps named, seamless pattern construction, and the three separate accessibility regimes this style runs into — WCAG for screens, ADA signage standards for physical premises, and labelling rules for packaging. Use whenever someone wants a hand-drawn, doodle, childlike, naive, marker, crayon, sticker, cutesy or illustrated brand, a bold rounded or blobby logotype, brand colours that are "ADA friendly", accessible or WCAG compliant, font pairings or brand guidelines for an illustrated brand, or brand patterns, seamless repeats, packaging illustration or a sticker sheet. Trigger on "hand drawn logo", "doodle branding", "cute packaging", "make my brand look hand made", "accessible brand palette", "font pairing for my logo", and on any request to build or extend a visual identity in this style.
 ---
 
 # Naive Brand Identity
@@ -11,11 +11,23 @@ It does not name the brand or write its copy. It does not produce finished illus
 
 ## Step 0: Answer the question you were actually asked
 
-Most requests here are small, and a small one gets a small answer. Someone asking for a font pairing gets a font pairing. Someone asking whether two hex codes pass gets the ratio and the verdict. Someone asking for a stripe pattern gets the stripe pattern. Skip to the last section of this file and stay there.
+Most requests here are small, and a small one gets a small answer. Someone asking for a font pairing gets a font pairing. Someone asking whether two hex codes pass gets the ratio and the verdict. Someone asking for a stripe pattern gets the stripe pattern. Go to the last section of this file and answer from there, pulling in only the one check that changes the answer — usually the arithmetic in Step 3 or the type checks in Step 4. Everything else stays out of the reply. Keep the answer close to the size of the question: a one-line question does not need six hundred words back.
 
-Run the full sequence when the request is to build an identity, or when a piece of one has to be designed against a system that already exists and must not break.
+Run the full sequence when the request is to build an identity. When a system already exists and the job is to add to it, run Step 1a first and then the full sequence, because the decisions are the same ones — you are reading them off the artwork instead of making them.
 
 When the request is broad but the brand is thin — a name and a vibe and nothing else — do not answer with a questionnaire. Ask only for the two things that actually change the output, which are what the brand sells and where the identity has to live, then build. Everything else can be proposed and corrected.
+
+Both questions are usually already answered in any brief detailed enough to trigger a full build, and that does not mean you know enough. Where something material is still ambiguous, state the assumption, say what it would change if wrong, and build on it. Proceeding on a stated assumption beats a third question.
+
+### Numbers you are not allowed to invent
+
+This file asks for specifics everywhere: line weights, minimum sizes, ratios. Two kinds of number are not yours to supply.
+
+**Production limits belong to a process and a vendor.** Minimum line weight for cut vinyl, screen printing, embroidery, foil and etching all differ, and they differ again between two vendors running the same process. Give a figure only as a typical starting point, say it is one, and tell the user to confirm it with whoever is making the thing before artwork is finalised. A confident invented minimum is worse than none, because it will be believed and it will be found out at production.
+
+**Regulatory figures belong to a jurisdiction and a category.** Name the regime and tell the user which one applies to them. Do not quote a type size or a dimension as settled law.
+
+Colour is the exception, and the reason the script exists: contrast ratios are computable exactly, so compute them and state them without hedging.
 
 ## Step 1: Decide who is holding the pen, before designing anything
 
@@ -23,19 +35,44 @@ This changes the deliverable, not just its wording. Say which one you are produc
 
 **A human illustrator** needs the rules written as constraints they can hold in their hand plus reference for tone, and they will make better decisions than the spec inside those constraints. Do not over-specify individual drawings.
 
-**An image-generation tool** needs locked prompt strings where the style anchor is byte-identical in every prompt, and it needs the precision in Step 6. This style is genuinely hard for generators, which default to rendered, shaded, gradient-filled "cute mascot" work. Budget several attempts per usable mark and say so.
+**An image-generation tool** needs locked prompt strings, and it needs Step 2b. This style is one of the hardest things to get out of a generator: they default to rendered, shaded, gradient-filled "cute mascot" work, and they will not hold a line weight. Budget several attempts per usable asset and say so, and steer the user toward drawing and tracing instead when they have the time, because it is faster than it looks.
 
 **Vector drawn by hand, or SVG written directly**, is realistic for patterns, geometric marks, and simple objects, and unrealistic for expressive figures. Write the patterns as SVG. Do not promise a charming wonky character in path data.
 
 Most brands end up mixed: patterns and marks in vector, figures drawn or generated. Say which route each asset takes.
 
+## Step 1a: If the system already exists
+
+Only when the brand has artwork already and the job is to extend it. This is a different problem from building, and the difference is encouraging: the rules were decided, they were simply never written down, and the artwork is the record. Nothing is unrecoverable while the files exist. What the user is missing is not a person, it is a spec, and most of it can be measured back out in an afternoon.
+
+Every decision in Step 2 inverts into a measurement. Take them off six or eight of the strongest existing pieces rather than one, because one piece cannot show you a tolerance:
+
+- **Line weight** — divide each piece's stroke width by its artwork width and see whether the results cluster. A tight cluster is the ratio and its tolerance. A scatter means the weight was fixed in absolute terms regardless of size, which is also a rule; record it that way. Check whether interior detail is thinner than outlines, which would make it a governed second weight.
+- **Terminals and joints** — read straight off the stroke settings.
+- **Wobble** — measure how far a line that wants to be straight actually deviates, as a percentage of its own length, and how far circles run off-round. Then check the amount is consistent across the set, and write "consistent" down explicitly, because someone coming to the style cold will vary it deliberately to look natural, which is the exact tell of an imitated hand.
+- **Fill policy** — whether fills are offset, in which direction, and by how much as a proportion of the shape.
+- **Proportions and face policy** — measure the ratios and note what the faces can and cannot express, since the new work will probably need an expression the original set never had to make.
+- **The bans** — list what never appears anywhere in the existing work.
+
+Then validate the extraction with a **re-draw test**, which is available only in this case and is stronger than anything a new brand can run: have the new hand redraw two existing pieces from the written spec alone, without tracing, and compare against the originals. Whatever reads as different is a rule you failed to extract, and it is usually the wobble or the fill policy. Follow it with the two-object test in Step 2 to check the spec holds on subjects the original set never covered. Both, in that order, before any of the new work is commissioned.
+
+**Separate a drift from a documented exception.** New work often genuinely needs something the original lacks — a state the faces cannot currently make, or a weight adjustment for a ground the original never used. That is legitimate, and the difference between an extension and a decay is only whether it was written down as a named exception with its scope attached. Record it as one, with the condition it applies under, rather than quietly widening the rule.
+
+**Check what was actually inherited**, because "we have the files" is a leaky claim. Confirm the right to make derivative work, since commissioned illustration is often licensed rather than assigned. Check which fonts are in the files and whether their licences transfer. Check the sources are complete — linked assets, brushes and custom appearances travel badly. None of these is likely to bite, and all are cheap now and expensive after the work is done.
+
 ## Step 2: Fix the pen before you fix anything else
+
+**Decide and write down: line weight, terminals and joints, wobble amount, fill policy, figure proportions, face policy, the bans. Then run the two-object repeatability test.**
 
 This is the step that separates a system from a pile of nice drawings, and it is the one that gets skipped. Every drawing in the set has to read as made by one hand in one sitting. That is a set of decisions, not a feeling, and it has to be written down before the first mark, because it is unrecoverable afterwards — twenty drawings at drifting line weights cannot be reconciled without redrawing them.
 
 Settle and record each of these:
 
-- **Line weight**, as a real value with the artwork size it belongs to, and as a ratio so it can scale. "2pt at 100mm wide" plus "roughly 1/500 of artwork width" survives being put on a business card and a van. One weight across the whole set is the default and the strongest choice. If you allow two, define exactly what the second is for, such as interior detail only, never outline.
+- **Line weight**, given as a ratio to artwork width so it survives moving between a business card and a van, plus one worked instance so the ratio is unambiguous. Derive the ratio, do not recall one — by measuring the existing artwork if there is any (Step 1a), and otherwise by drawing the mark at the size it will most often appear, picking the weight that looks right there, and dividing. Then state both, and check they agree — a stated ratio and a stated point size that contradict each other is a spec that produces two different brands, and unit conversion is where it happens. Convert before you compare: a point is 1/72 inch, about 0.353mm, so a 2pt line on a 100mm-wide artwork is about 1/140 of the width. Write both forms only after they agree.
+
+  Then, *if anything is physically produced — skip this entirely for a screens-only brand rather than gating the answer on it* — check the ratio against the coarsest process the identity has to survive, because a ratio that looks elegant on screen can fall under a physical floor at real sizes. Cut vinyl has to be weeded by hand and tears below a certain width; embroidery cannot hold a thin stitched line; screen printing and foil each have their own floor. Get those numbers from the vendor, not from memory, and if the ratio falls below one of them, either raise it for everything or draw a dedicated heavier version for that process and say which assets use it.
+
+  One weight across the whole set is the default and the strongest choice. If you allow two, define exactly what the second is for, such as interior detail only, never outline — and note that interior detail is thinner than the outline in most drawings, so it hits the production floor first.
 - **Terminal and joint**, meaning round or flat line ends and whether corners are rounded. Rounded terminals read warm and childlike. Flat reads more editorial. Mixing them is what makes a set feel bought from three stock libraries.
 - **Wobble, and how much.** This is the defining variable of the style and the one described vaguely. Say it as deviation: a line that would be straight may drift up to about 2% of its own length, curves may be slightly asymmetric, circles may be off-round, and nothing closes perfectly. Then say the thing that matters more: the wobble is *consistent in amount* across the set. Random amounts of wobble is not what a real hand does. A hand is consistently imprecise.
 - **Fill policy.** Outline only, solid fill, or outline plus a single offset fill that deliberately misses its edges. Pick one. The offset fill is a strong, cheap way to signal "printed by hand" and it needs its own rule for how far it may miss, or it turns into a mistake.
@@ -45,15 +82,39 @@ Settle and record each of these:
 
 Then write the **repeatability test**, and make the user run it before commissioning or generating the full set: draw two objects of very different kinds under the rules, one organic and one hard-edged, such as a leaf and a pair of scissors. If they do not look related, the rules are underspecified and the missing rule is usually the wobble or the fill policy. Finding that after forty assets is expensive; finding it after two is free.
 
+## Step 2b: If a generator is drawing it
+
+Only when Step 1 chose that route. The pen rules above are now a prompt fragment, and the fragment has to be **byte-identical in every prompt in the set**. Not paraphrased, not shortened, not "same style as before". A reworded anchor is the single most common way a generated set falls apart, and the damage is invisible until the assets sit side by side.
+
+Build one anchor string from the Step 2 decisions — line quality, terminal shape, fill policy, the bans — and put it first in every prompt, then the subject, then the framing. Say the bans explicitly and in the negative, because "flat" and "simple" are not read as instructions to omit shading, whereas "no shading, no gradient, no perspective, no cast shadow" often is.
+
+Generate the two repeatability-test subjects before anything else, for the same reason a human illustrator draws them: if one organic and one hard-edged subject do not look related, tighten the anchor before generating forty assets.
+
+Two things generators will not do reliably, so plan around them rather than fighting: they will not hold an exact line weight across assets, and they will not produce a seamless tile. Normalise weight by tracing to vector afterwards, and build patterns in vector from generated elements rather than asking for the repeat.
+
 ## Step 3: Build the palette as pairs, and verify it rather than asserting it
+
+**Establish which regimes apply, assign colour roles, compute every pair you will actually use, and say what each pair may be used for.**
 
 A palette is not accessible. A *pairing* is accessible, at a size, for a purpose. This distinction is the whole job, and skipping it is how brands ship a "WCAG AA palette" whose actual button is unreadable.
 
-### What the standard is
+### Work out which regime the brand is actually in
 
-"ADA friendly" is a colloquial way of asking for WCAG conformance. The ADA itself sets no contrast numbers; WCAG 2.1 Level AA is the benchmark that regulation and litigation have converged on, and it is what to design against. Say that plainly once and move on. You are not giving legal advice, and the arithmetic is the part that is actually actionable.
+"ADA friendly" is what people say, and it collapses three different regimes that have different rules. Establish which ones apply before quoting any threshold, because a brand can sit in all three at once with a different answer in each.
 
-The thresholds that govern:
+**Screens — WCAG.** Website, app, social, email. The ADA sets no contrast numbers itself; WCAG 2.1 Level AA is the benchmark regulation and litigation have converged on, and its thresholds are numeric and computable. This is the regime the rest of this step is about.
+
+**Physical premises — ADA signage standards.** Any business the public walks into. This is the regime that most often catches a brand in this style, and it is the one a screen-focused answer misses completely. Permanent signs identifying rooms and spaces are held to requirements on the letterforms themselves, not just the colours: characters must be sans serif and must not be italic, script, or decorative; raised characters are accompanied by Braille; finishes must be non-glare; and characters must contrast with their background, stated qualitatively as light-on-dark or dark-on-light rather than as a ratio. Mounting position and character height are specified too.
+
+The consequence is blunt and worth saying early, because it protects the brand from being blamed later: **an expressive hand-drawn or script face is not permitted on these signs at all.** No contrast ratio rescues it. Design the compliant signage as its own zone that the brand visits rather than governs — the identity lives in the room around the sign, not on it — and give the fabricator the neutral face and the two colours rather than the brand file. Treat the specific dimensions as the fabricator's to confirm against the current standard and any local code.
+
+**Products and packaging — labelling rules.** Food, drink, cosmetics, supplements and several other categories carry their own requirements for the information panel: minimum type sizes, permitted type styles, and a requirement that the panel contrast clearly with its background. These are stricter than WCAG in some respects and unrelated to it in others. Name the regime for the user's market and category and tell them to check it; do not quote a type size as settled.
+
+Two things follow that are easy to miss. The contrast ratios below are defined for sRGB on a screen, so they are a useful proxy for print and not the governing standard there — ink on stock, coating, and ambient light all move real legibility, and a pairing that clears 4.5:1 in the calculator can still be unreadable at 6pt on uncoated card under supermarket lighting. And a printed surface has no user-adjustable text size, so the headroom that a screen gets from zoom does not exist; take more margin than the threshold on anything small and printed.
+
+You are not giving legal advice. Say which regimes apply, in one line each, and move on to the arithmetic, which is the part that is actually actionable.
+
+The WCAG thresholds:
 
 - **4.5:1** for body text and any text below the large threshold.
 - **3:1** for large text, meaning 24px or larger at regular weight, or 18.66px or larger at bold. This one gets misapplied constantly: it is a size-and-weight exemption, not a headline exemption.
@@ -68,7 +129,20 @@ State a contrast ratio only when you have actually calculated it. An eyeballed r
 
 For each channel, take the sRGB value as 0–1, then linearise: if the value is at or below 0.03928, divide by 12.92; otherwise raise `(value + 0.055) / 1.055` to the power 2.4. Relative luminance is `0.2126 R + 0.7152 G + 0.0722 B` on those linearised values. The ratio is `(L_lighter + 0.05) / (L_darker + 0.05)`.
 
-`scripts/contrast.py` in this skill runs the whole palette as a matrix. Use it when you can execute code, and do the arithmetic explicitly when you cannot.
+`scripts/contrast.py` in this skill does it for you. Pass the colours positionally, optionally labelled, and it prints the full pair matrix with a verdict per pair:
+
+```
+python3 scripts/contrast.py ground=#FBF4E9 ink=#1E2A3A accent=#7FBBD9
+python3 scripts/contrast.py --darken '#7FBBD9' '#FBF4E9'
+```
+
+`--darken` answers the question that always follows a failure: it holds the brand hue and walks lightness down until the pairing clears 3:1, 4.5:1 and 7:1, so the text colour is derived from the brand rather than picked by eye. Use the script whenever you can execute code, and do the arithmetic explicitly when you cannot.
+
+### Deciding whether a mark is decoration or vocabulary
+
+This style makes the distinction hard, because everything on the surface is a hand-drawn mark and the exemption for decoration is broad. Resolve it with one test rather than by feel: **remove the mark, and ask whether information disappears from that surface.** If the same distinction is also carried by a word or a number beside it, the mark is decoration and carries no requirement. If the mark is the only thing telling two states, categories or controls apart, it is vocabulary and needs 3:1.
+
+The status of a mark is therefore not a property of how it was drawn, and it can change without redrawing it. A squiggle that borders a label is decoration; the same squiggle used on one variant and not another to signal heat level is vocabulary. Say which of your marks are which in the guidelines, because the person applying them later will not re-derive it.
 
 ### Assemble the palette
 
@@ -111,7 +185,8 @@ For each recommendation, give the reason it fits *this* brand and what it will s
 - **Figures.** Tables, prices, and nutrition panels need tabular lining figures. A handwriting face with proportional figures makes any column of numbers ragged.
 - **Legibility floor.** Script and handwriting faces have a size below which they stop being readable, and it is much higher than designers assume. Confine them to display sizes. Never set body copy, never set legally required text, and never set anything a user must read under stress in them. This is not a preference; it is the accessibility half of the brief, and low-vision and dyslexic readers are who it protects.
 - **Licence.** Say the licence and what it permits, since desktop, web, app embedding and logo use are separately granted and a font legal in a mockup can be illegal on a shipped app. Prefer openly licensed families when the user has no type budget, and say when the paid option is genuinely worth it. Never draw a logotype from a face whose licence forbids modification without saying so.
-- **Fallback stack.** Whatever is used on screen needs the fallback named, and the metric difference between the face and its fallback checked, or every layout shifts when the webfont fails.
+- **Fallback stack**, *screen only, so skip it for a brand with no digital surface rather than padding the answer.* Whatever is used on screen needs the fallback named and the metric difference between the face and its fallback checked, or every layout shifts when the webfont fails.
+- **The tool the user actually has.** A face is only usable if it is available where they work. Custom font upload is a paid feature in some design tools, and OpenType controls such as tabular figures are unavailable in others. Confirm the face and the features are reachable in their tool before designing around them, and where a feature is missing, say what to do instead — for a short run of numerals, drawing them by hand suits this style better than fighting the software.
 
 Set the **scale and pairing rules** as ratios rather than a fixed list of sizes: the relationship between display, heading, and body, the tracking the logotype needs at large and small sizes, and the minimum size the display face may be used at. A fixed size list is wrong on the next surface; a ratio survives.
 
@@ -123,11 +198,17 @@ Patterns are where this style earns its keep, because they cover large surfaces 
 
 **Make it actually tile.** A tile is seamless only when every element crossing an edge is duplicated at the opposite edge, offset by exactly the tile width or height. In SVG, use a `<pattern>` with `patternUnits="userSpaceOnUse"` and a fixed width and height, and draw the edge-crossing elements twice. A straight repeat puts the seam on a grid and shows tramlines in the diagonal; a half-drop, offsetting alternate columns by half the tile height, hides them and is the better default for anything organic. Verify by tiling at least three by three and looking for the two artefacts that always appear: a visible seam, and an accidental diagonal alley of aligned elements.
 
+**Compensate the stroke when you scale.** Scaling a motif scales its outline with it, so a scale ladder built by scaling the tile silently breaks the one-weight rule the whole system rests on — a motif at 0.45 draws its line at 0.45 too, and the small end of your ladder is a lighter brand than the large end. Set each instance's stroke width to the base weight divided by its scale factor, so the apparent weight is identical at every size. This is the most common way a hand-drawn pattern violates its own pen rules, and it happens precisely to people following the scale-ladder advice below.
+
 **Build a scale ladder, not a pattern library.** One motif at three scales does more work than three motifs, and it holds together, which three motifs will not. Say which scale belongs to which surface, and give the largest one a low enough density that it does not turn into texture-coloured mush on a big surface.
 
 **Then check the patterns against Step 3, because this is where a verified palette gets destroyed.** Text over a pattern does not have a contrast ratio; it has a different ratio against every element it crosses, and the binding one is the worst of them. Either keep text off the pattern entirely, put it on a solid panel, or constrain the pattern's colours so that its lightest and darkest elements both clear the threshold against the text. Say which of the three the brand is doing. A pattern is also a texture that thin naive line work disappears into, so check the line art on it as well, not just the type.
 
-**Production.** Say the colour count, since a two-colour pattern is a different price on packaging than a four-colour one, and screen printing and embroidery both set minimums on line weight and gap that thin wobbly lines fail. Say how the pattern behaves on a curve and at a seam, because a can, a cup and a tote all cut it somewhere, and the answer to where the seam falls should be a decision rather than a surprise.
+**Say how it ships**, which means different things on each route and only one of them will apply.
+
+*Printed or made:* give the colour count, since a two-colour pattern is a different price on packaging than a four-colour one, and note that screen printing and embroidery both set minimums on line weight and gap that thin wobbly lines fail. Say how the pattern behaves on a curve and at a seam, because a can, a cup and a tote all cut it somewhere, and where the seam falls should be a decision rather than a surprise.
+
+*On screen:* ship the tile as SVG rather than a raster export, so it stays sharp at every density and the stroke widths remain editable when the ladder is retuned. Give the tile dimensions and the per-scale stroke widths alongside it. Watch total file weight where the pattern is dense, since a tile with a few hundred elements is cheaper to repeat than to flatten, and check the pattern renders identically on both platforms before it goes into a shipped build.
 
 ## Step 6: Assemble, and say how it stays coherent
 
@@ -135,27 +216,28 @@ Deliver the system as the smallest thing that is actually usable, which is: the 
 
 Include the parts that get discovered missing:
 
-- The **one-colour version** of every mark, for embroidery, foil, engraving, and any surface that gets one ink. If the identity only works in its full palette it is not finished.
+- The **one-colour version** of every mark. On a physical route that is for embroidery, foil, engraving and any surface that gets one ink; on screen it is for monochrome tab-bar and notification icons, and for anywhere the mark sits on an unpredictable ground. Both routes need it, so an identity that only works in its full palette is not finished either way.
 - The **small-size version.** Naive line work closes up and fills in when reduced. Name the size below which detail is dropped, and provide the simplified mark.
 - The **clear space and minimum size** for the logotype.
 - **What not to do**, drawn from the actual risks: do not recolour the line art, do not add a stroke to the wordmark, do not set the display face in a paragraph, do not put type on the dense pattern.
-- The **legal and regulatory panels**, which have their own rules that WCAG does not cover and this aesthetic reliably violates. Food, drink, cosmetic and supplement labelling in most markets sets its own requirements for the information panel — minimum type sizes, permitted type styles, and a requirement that the panel be in a colour that contrasts sharply with its background. A cream nutrition table on a mid-green panel is precisely what those rules exclude, and it is the single most common compliance failure in this style's packaging. Tell the user to check the rule for their market and product category, and design the panel as its own zone that the brand palette visits rather than governs.
+- The **zones the brand does not govern**, one for each regime in Step 3 that applies. For a product, that is the information panel: a cream nutrition table on a mid-green panel is precisely what labelling rules exclude, and it is the most common compliance failure in this style's packaging. For premises, it is the permanent room signage, where the brand face is not permitted at all. Write each one as a fixed spec — the neutral face, the two colours, no pattern, no illustration — so that whoever builds it is not improvising from the brand file. This is the section most likely to be missing, because the identity looks finished without it.
 
 If the identity has to survive a handoff, name what a new designer must not change, and separate it from what they are free to invent. That is the same anchor problem childrens-book-illustration-brief solves for a book, and it fails the same way when it is left implicit.
 
 ## Common failure modes to avoid
 
-- Drawing charming individual assets with no shared pen rules, then discovering at asset thirty that nothing matches and the fix is redrawing all of them.
-- Confusing naive with careless. The style is consistently distorted, not randomly wrong, and irregularity has to be as governed as everything else. Random wobble is the tell of a machine imitating a hand.
-- Stating a contrast ratio without computing it, which produces confidently wrong numbers that a user ships on.
-- Certifying a *palette* as accessible instead of certifying pairs at sizes and jobs.
-- Applying 4.5:1 to the logotype, which is exempt, and thereby destroying the brand to fix a problem that did not exist — while leaving the actual body text on a soft accent that does fail.
-- Solving a failing pairing by darkening the entire brand, when adding one text-only neutral keeps the look and fixes the problem.
-- Pairing three expressive faces so nothing leads, or picking a display face that turns out to have one weight, no accents, and proportional figures.
-- Patterns drawn with perfect geometry beside hand-drawn illustration.
-- Patterns that do not tile, or that tile with a diagonal alley nobody checked for at three by three.
-- Verifying the palette, then putting the text on a pattern and voiding it.
-- Producing a guidelines document with no one-colour mark, no small-size behaviour, and no rule for the regulated panel.
+These are the ones that survive following the steps above, not restatements of them.
+
+- **Producing a beautifully structured answer full of invented numbers.** This file demands specifics, and the specifics it cannot supply are production minimums and regulatory figures. A rigorous-looking spec with a fabricated vinyl minimum in it is more dangerous than a vague one, because nobody checks it until the plates are cut. Mark every such number as a starting point with an owner.
+- **Stating a ratio and a point size that disagree.** A weight given both ways has to be reconciled, and unit conversion is where the contradiction hides. Two contradictory specs for one rule produce two different brands.
+- **Answering the accessibility question for the wrong regime.** A screen answer to a business whose exposure is its front door, or a WCAG ratio quoted at a nutrition panel as though it governed. Establish the regime before quoting a number.
+- **Treating a mark's status as fixed.** Decoration becomes vocabulary the moment it is the only thing distinguishing two options, without being redrawn, and the guidelines are usually written before that happens.
+- **Building the scale ladder by scaling the tile**, so the small end of the pattern is a lighter brand than the large end.
+- **Verifying the palette, then putting the text on the pattern and voiding it.**
+- **Letting the completeness instinct leak into a small question.** The heavy sections model a register that bleeds upward, and a user who typed one line gets six hundred words back. Match the answer to the question.
+- **Confusing naive with careless.** The style is consistently distorted, not randomly wrong. Random wobble is the tell of a machine imitating a hand; a real hand is consistently imprecise.
+- **Solving a failing pairing by darkening the whole brand**, producing a palette that passes and that the user quietly abandons because it no longer looks hand made.
+- **Delivering a system with no one-colour mark and no small-size behaviour**, which is discovered the first time anyone orders embroidery or looks at the profile picture.
 
 ## If the user only wants one thing
 
