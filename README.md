@@ -25,6 +25,7 @@ You don't invoke a skill by hand. Claude loads it when your request matches its 
 | [stakeholder-interview-synthesizer](skills/stakeholder-interview-synthesizer) | tested | Turns rough interview notes into themes tied to decisions, with the disagreements named rather than averaged away |
 | [feature-flag-rollout-planner](skills/feature-flag-rollout-planner) | tested | Ramp schedule, guardrail metrics, kill criteria written as numbers, and the date the flag gets deleted |
 | [naming-and-taxonomy-checker](skills/naming-and-taxonomy-checker) | tested | Audits product terminology for collisions and split terms, then prices the migration by what each rename costs |
+| [naive-brand-identity](skills/naive-brand-identity) | draft | Hand-drawn identity systems: the pen rules that keep forty drawings looking like one hand, palettes checked as pairs rather than asserted, type, and patterns that tile |
 
 ## Children's books
 

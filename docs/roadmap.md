@@ -34,6 +34,7 @@ Status key: `idea` not written, `draft` written but untested, `tested` run again
 - [x] family-tradition-documenter, `tested`
 - [x] kid-question-answerer, `tested`
 - [x] co-parenting-message-drafter, `tested`
+- [x] naive-brand-identity, `draft`
 
 ## Design and product, `idea`
 

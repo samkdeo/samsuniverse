@@ -209,6 +209,13 @@
       "status": "tested",
       "version": "0.1.0",
       "description": "Drafts a co-parent message that stays on logistics, gives no opening to a fight, and reads well to a third party."
+    },
+    {
+      "name": "naive-brand-identity",
+      "path": "skills/naive-brand-identity",
+      "status": "draft",
+      "version": "0.1.0",
+      "description": "Builds a hand-drawn brand identity: pen rules that hold a set together, palettes verified as pairs, type, and patterns."
     }
   ]
 }
