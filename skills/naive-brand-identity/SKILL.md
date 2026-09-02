@@ -13,7 +13,7 @@ It does not name the brand or write its copy. It does not produce finished illus
 
 Most requests here are small, and a small one gets a small answer. Someone asking for a font pairing gets a font pairing. Someone asking whether two hex codes pass gets the ratio and the verdict. Someone asking for a stripe pattern gets the stripe pattern. Go to the last section of this file and answer from there, pulling in only the one check that changes the answer — usually the arithmetic in Step 3 or the type checks in Step 4. Everything else stays out of the reply. Keep the answer close to the size of the question: a one-line question does not need six hundred words back.
 
-Run the full sequence when the request is to build an identity. When a system already exists and the job is to add to it, run Step 1a first and then the full sequence, because the decisions are the same ones — you are reading them off the artwork instead of making them.
+Run the full sequence when the request is to build an identity. When a system already exists, scale the extraction in Step 1a to the size of what is being added rather than running it whole: a body of new work earns the full measurement pass, while a single asset needs only the rules that asset touches, read off the existing artwork in a couple of minutes. Nobody adding one pattern needs a font-licence audit.
 
 When the request is broad but the brand is thin, do not answer with a questionnaire. Two things actually change the output — what the brand sells, and where the identity has to live — and any brief detailed enough to trigger a full build has usually answered both already. Ask only if one is genuinely missing. Everything still ambiguous after that gets a stated assumption rather than a question: say what you are building on and what it would change if wrong, then build. Proceeding on a stated assumption beats going back for a third question, and the user will correct an assumption far faster than they will answer an interrogation.
 
@@ -41,7 +41,7 @@ Most brands end up mixed, and in a mixed brief this is the load-bearing decision
 
 ## Step 1a: If the system already exists
 
-Only when the brand has artwork already and the job is to extend it. This is a different problem from building, and the difference is encouraging: the rules were decided, they were simply never written down, and the artwork is the record. Nothing is unrecoverable while the files exist. What the user is missing is not a person, it is a spec, and most of it can be measured back out in an afternoon.
+Only when the brand has artwork already and the job is to extend it, and at the depth the addition justifies — take the two or three rules the new asset actually touches for a single piece, and the full pass below only when a body of work is being added or a new hand is taking over. This is a different problem from building, and the difference is encouraging: the rules were decided, they were simply never written down, and the artwork is the record. Nothing is unrecoverable while the files exist. What the user is missing is not a person, it is a spec, and most of it can be measured back out in an afternoon.
 
 Every decision in Step 2 inverts into a measurement. Take them off six or eight of the strongest existing pieces rather than one, because one piece cannot show you a tolerance:
 
@@ -156,6 +156,12 @@ python3 scripts/contrast.py --darken '#7FBBD9' '#FBF4E9'
 
 `--darken` answers the question that always follows a failure: it holds the brand hue and walks lightness down until the pairing clears 3:1, 4.5:1 and 7:1, so the text colour is derived from the brand rather than picked by eye. Use the script whenever you can execute code, and do the arithmetic explicitly when you cannot.
 
+### When the colours arrive as words
+
+Users name colours in English — mustard, sage, terracotta, oat — far more often than in hex, and the instruction to compute rather than estimate then has nothing to compute on. Do not let that stall the answer, and do not quietly invent hex codes and present the resulting ratio as authoritative, which is the worst available outcome because it looks exactly like a verified one.
+
+Pick a reasonable stand-in for each named colour, say in the reply that it is a stand-in, run the matrix on it, and offer to recompute on the real values. The verdicts usually survive the substitution when a pairing is far from a threshold, and that is worth saying: a pairing computing at 1.8:1 will not become compliant with a slightly different mustard, so the guidance holds. Flag the ones that land near a threshold as genuinely dependent on the real value, because those can flip.
+
 ### Deciding whether a mark is decoration or vocabulary
 
 This style makes the distinction hard, because everything on the surface is a hand-drawn mark and the exemption for decoration is broad. Resolve it with one test rather than by feel: **remove the mark, and ask whether information disappears from that surface.** If the same distinction is also carried by a word or a number beside it, the mark is decoration and carries no requirement. If the mark is the only thing telling two states, categories or controls apart, it is vocabulary and needs 3:1.
@@ -216,11 +222,42 @@ Set the **scale and pairing rules** as ratios rather than a fixed list of sizes:
 
 Patterns are where this style earns its keep, because they cover large surfaces cheaply and they are where the brand's personality gets applied without another commissioned drawing.
 
+**Choose the motif against the surfaces, not the mood board.** "Stripes or dots?" is the most common question here and it has a real answer, because the families behave differently once they are wobbly and once they are small.
+
+Scattered marks — dots, rounds, small objects — are the safe default. Density can be dropped right down behind text and tightened elsewhere without redrawing anything, and irregular placement hides the repeat.
+
+Ruled families — stripes, checks, grids — are the risky ones in this style, and the risk is invisible at the size you design them. Hand-drawn stripes that are pleasantly uneven at hero scale turn into tramlines and can moiré against the printer's screen or a display's pixel grid when they shrink, and horizontal rules fight lines of text in a way scattered marks do not. Use them where they stay large, keep them off small printed pieces, and if the brand wants stripes everywhere, draw a separate coarser version for the small surfaces rather than scaling the same tile down.
+
+Spirals and continuous line motifs sit in between: they carry the hand beautifully and they are the hardest family to tile, because a continuous line has to leave and re-enter the tile edge at matching positions. Budget more time or place them as single elements rather than a repeat.
+
 **Draw them with the same pen.** A pattern built from geometrically perfect circles beside illustration built from wobbly ones instantly reads as two brands. The stripes are not parallel. The dots are not identical. The spiral does not have a constant pitch. The Step 2 rules govern here exactly as they govern the figures, and this is the most common place they are quietly abandoned.
 
 **Make it actually tile.** A tile is seamless only when every element crossing an edge is duplicated at the opposite edge, offset by exactly the tile width or height. In SVG, use a `<pattern>` with `patternUnits="userSpaceOnUse"` and a fixed width and height, and draw the edge-crossing elements twice. A straight repeat puts the seam on a grid and shows tramlines in the diagonal; a half-drop, offsetting alternate columns by half the tile height, hides them and is the better default for anything organic. Verify by tiling at least three by three and looking for the two artefacts that always appear: a visible seam, and an accidental diagonal alley of aligned elements.
 
 **Compensate the stroke when you scale.** Scaling a motif scales its outline with it, so a scale ladder built by scaling the tile silently breaks the one-weight rule the whole system rests on — a motif at 0.45 draws its line at 0.45 too, and the small end of your ladder is a lighter brand than the large end. Set each instance's stroke width to the base weight divided by its scale factor, so the apparent weight is identical at every size. This is the most common way a hand-drawn pattern violates its own pen rules, and it happens precisely to people following the scale-ladder advice below.
+
+The scaffolding, so it is not reinvented each time — replace the placeholder path with the motif and keep the mechanics:
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360">
+  <defs>
+    <path id="mark" d="…"/>            <!-- one motif, drawn once, centred on 0,0 -->
+    <pattern id="tile" patternUnits="userSpaceOnUse" width="180" height="180">
+      <g fill="none" stroke="#000" stroke-linecap="round">
+        <use href="#mark" transform="translate(40,32)"             stroke-width="3"/>
+        <use href="#mark" transform="translate(112,96) scale(0.75)" stroke-width="4"/>
+        <!-- any mark crossing an edge is drawn again at the opposite edge, -->
+        <!-- offset by exactly the tile width or height -->
+        <use href="#mark" transform="translate(176,140) scale(0.6)" stroke-width="5"/>
+        <use href="#mark" transform="translate(-4,140)  scale(0.6)" stroke-width="5"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="360" height="360" fill="url(#tile)"/>
+</svg>
+```
+
+Every `stroke-width` there is the base weight divided by that instance's scale, which is the compensation described above: 3 at full size, 4 at 0.75, 5 at 0.6.
 
 **Build a scale ladder, not a pattern library.** One motif at three scales does more work than three motifs, and it holds together, which three motifs will not. Say which scale belongs to which surface, and give the largest one a low enough density that it does not turn into texture-coloured mush on a big surface.
 
@@ -263,13 +300,13 @@ These are the ones that survive following the steps above, not restatements of t
 
 ## If the user only wants one thing
 
-Answer it at its own size, and pull in only the check that changes the answer.
+Answer it at its own size, and bring only the named sections. Nothing else in this file enters the reply, and an existing brand does not turn a small request into a full extraction — take the two or three rules the asset touches and move on.
 
 **A font pairing:** give two or three pairings, each with why it fits this brand and what it will struggle with, and run the display candidate against weights, character set, figures, and licence. If the brand has an existing logotype, the pairing question is really "what is quiet enough to sit under this", so ask what the logotype is before recommending.
 
 **A colour question:** compute the ratio, give the verdict at 4.5:1 and 3:1, and say what that pair may and may not be used for. If they asked whether their palette is accessible, answer with the pair matrix rather than a yes.
 
-**A single pattern:** ask the surface and the colour count, draw it under whatever pen rules already exist, give it as SVG with the tile mechanics right, and check it against any text that will sit on it.
+**A single pattern** — bring Step 5's motif choice, tile mechanics and stroke compensation, plus the decoration-or-vocabulary test in Step 3 if any text sits on it. Get the surfaces and the existing pen rules, note that the colour count is usually obvious from the brand, draw it under those rules, and give it as SVG with the edge duplication and the per-instance stroke widths right.
 
 **A logotype direction:** propose two or three routes with what each one commits the brand to later, since a custom-lettered mark and a licensed-face mark have very different consequences for the rest of the system.
 
