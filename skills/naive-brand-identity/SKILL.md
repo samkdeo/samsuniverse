@@ -15,15 +15,13 @@ Most requests here are small, and a small one gets a small answer. Someone askin
 
 Run the full sequence when the request is to build an identity. When a system already exists and the job is to add to it, run Step 1a first and then the full sequence, because the decisions are the same ones — you are reading them off the artwork instead of making them.
 
-When the request is broad but the brand is thin — a name and a vibe and nothing else — do not answer with a questionnaire. Ask only for the two things that actually change the output, which are what the brand sells and where the identity has to live, then build. Everything else can be proposed and corrected.
-
-Both questions are usually already answered in any brief detailed enough to trigger a full build, and that does not mean you know enough. Where something material is still ambiguous, state the assumption, say what it would change if wrong, and build on it. Proceeding on a stated assumption beats a third question.
+When the request is broad but the brand is thin, do not answer with a questionnaire. Two things actually change the output — what the brand sells, and where the identity has to live — and any brief detailed enough to trigger a full build has usually answered both already. Ask only if one is genuinely missing. Everything still ambiguous after that gets a stated assumption rather than a question: say what you are building on and what it would change if wrong, then build. Proceeding on a stated assumption beats going back for a third question, and the user will correct an assumption far faster than they will answer an interrogation.
 
 ### Numbers you are not allowed to invent
 
 This file asks for specifics everywhere: line weights, minimum sizes, ratios. Two kinds of number are not yours to supply.
 
-**Production limits belong to a process and a vendor.** Minimum line weight for cut vinyl, screen printing, embroidery, foil and etching all differ, and they differ again between two vendors running the same process. Give a figure only as a typical starting point, say it is one, and tell the user to confirm it with whoever is making the thing before artwork is finalised. A confident invented minimum is worse than none, because it will be believed and it will be found out at production.
+**Production limits belong to a process and a vendor.** Minimum line weight for cut vinyl, screen printing, embroidery, foil and etching all differ, and they differ again between two vendors running the same process. Name the constraint, name who owns the number, and tell the user what to ask for — "ask your printer for their minimum line width and gap on this stock" is a usable instruction. Supply a figure only where you actually have grounds for it. Hedging an invented number does not launder it: a "typical" figure you have no source for is still a number the user will design against, and the hedge will not survive being repeated.
 
 **Regulatory figures belong to a jurisdiction and a category.** Name the regime and tell the user which one applies to them. Do not quote a type size or a dimension as settled law.
 
@@ -39,7 +37,7 @@ This changes the deliverable, not just its wording. Say which one you are produc
 
 **Vector drawn by hand, or SVG written directly**, is realistic for patterns, geometric marks, and simple objects, and unrealistic for expressive figures. Write the patterns as SVG. Do not promise a charming wonky character in path data.
 
-Most brands end up mixed: patterns and marks in vector, figures drawn or generated. Say which route each asset takes.
+Most brands end up mixed, and in a mixed brief this is the load-bearing decision rather than a preamble to it. Set it out as a table of every asset against its route before designing anything, because the routes have different constraints and an asset quietly assigned to the wrong one is discovered late. Patterns and geometric marks go to vector, figures to drawing or generation — and anything carrying a letter goes to neither, for the reason in Step 2b.
 
 ## Step 1a: If the system already exists
 
@@ -86,11 +84,25 @@ Then write the **repeatability test**, and make the user run it before commissio
 
 Only when Step 1 chose that route. The pen rules above are now a prompt fragment, and the fragment has to be **byte-identical in every prompt in the set**. Not paraphrased, not shortened, not "same style as before". A reworded anchor is the single most common way a generated set falls apart, and the damage is invisible until the assets sit side by side.
 
-Build one anchor string from the Step 2 decisions — line quality, terminal shape, fill policy, the bans — and put it first in every prompt, then the subject, then the framing. Say the bans explicitly and in the negative, because "flat" and "simple" are not read as instructions to omit shading, whereas "no shading, no gradient, no perspective, no cast shadow" often is.
+**No letter in the identity comes out of a generator.** Generators cannot spell reliably, and they are far worse on anything beyond unaccented Latin — diacritics land on the wrong character, get swapped for a similar-looking mark, or vanish. A brand name is the one string that must be right on every surface, and a misspelling is not a design defect that gets nudged in review, it is a reprint of everything already produced. So the generator draws objects only; every letter is hand-lettered or set in a real font, and `no text, no letters, no words` goes in every prompt even for a plain object, because generators garnish scenes with invented signage.
+
+This inverts the economics of hand-lettering for any brand whose name carries diacritics or uses a non-Latin script. Lettering the wordmark by hand stops being the expensive option and becomes the safe one, because a drawn mark cannot be a missing glyph, a wrong glyph, or a silent font substitution. It is also more achievable than it sounds: a short name is a tracing job, not a drawing job — write it out at size many times, photograph the best, and trace that.
+
+Build one anchor string from the Step 2 decisions — line quality, terminal shape, fill policy, the bans — and put it first in every prompt, then the subject, then the framing. Say the bans explicitly and in the negative, because "flat" and "simple" are not read as instructions to omit shading, whereas "no shading, no gradient, no perspective, no cast shadow" often is. The anchor is a slot-filled skeleton rather than a fixed string, and only the values change between brands:
+
+```
+[medium and line quality], [terminal and corner shape], [wobble description],
+[fill policy], [palette constraint], [ground], every ban stated negatively,
+no text, no letters, no words
+```
+
+Then each prompt is `[ANCHOR], [subject], [framing], single object only`. Where the tool takes a separate negative prompt, the bans move there rather than being repeated in both.
 
 Generate the two repeatability-test subjects before anything else, for the same reason a human illustrator draws them: if one organic and one hard-edged subject do not look related, tighten the anchor before generating forty assets.
 
-Two things generators will not do reliably, so plan around them rather than fighting: they will not hold an exact line weight across assets, and they will not produce a seamless tile. Normalise weight by tracing to vector afterwards, and build patterns in vector from generated elements rather than asking for the repeat.
+Three things generators will not do reliably, so plan around them rather than fighting. They will not hold an exact line weight across assets, so trace each result to vector and set every path to the one weight — that normalising pass, not the prompt, is what makes separately generated assets read as one set. They will not produce a seamless tile, so build patterns in vector from generated elements rather than asking for the repeat. And they will not hand you a cut-out: expect an opaque rectangle, so background removal and any die line are vector work afterwards. Tracing conveniently solves resolution too, which otherwise bites when a raster result meets a print size.
+
+On budget, say plainly that a usable asset commonly takes several attempts and a difficult one can take many, so a set of ten is an evening rather than an hour. Give the user the shape of the cost rather than a fake average.
 
 ## Step 3: Build the palette as pairs, and verify it rather than asserting it
 
@@ -104,11 +116,17 @@ A palette is not accessible. A *pairing* is accessible, at a size, for a purpose
 
 **Screens — WCAG.** Website, app, social, email. The ADA sets no contrast numbers itself; WCAG 2.1 Level AA is the benchmark regulation and litigation have converged on, and its thresholds are numeric and computable. This is the regime the rest of this step is about.
 
-**Physical premises — ADA signage standards.** Any business the public walks into. This is the regime that most often catches a brand in this style, and it is the one a screen-focused answer misses completely. Permanent signs identifying rooms and spaces are held to requirements on the letterforms themselves, not just the colours: characters must be sans serif and must not be italic, script, or decorative; raised characters are accompanied by Braille; finishes must be non-glare; and characters must contrast with their background, stated qualitatively as light-on-dark or dark-on-light rather than as a ratio. Mounting position and character height are specified too.
+**Physical premises — accessible signage standards, whichever ones apply where the business is.** Any business the public walks into. This is the regime that most often catches a brand in this style, and the one a screen-focused answer misses completely.
+
+Establish the country before naming a statute, and do not reach for the American one by reflex: people say "ADA" everywhere, and it governs only in the United States. Elsewhere the equivalent sits under that country's own disability discrimination law and building code, with its own technical standard. Name the regime that actually applies to the user, and if you are not certain which that is, say what kind of rule to look for rather than inventing a citation.
+
+The shape is broadly consistent wherever you land, and the shape is what affects the design. Permanent signs identifying rooms and spaces are held to requirements on the letterforms themselves, not just on colour: characters must be sans serif and must not be italic, script, or decorative; tactile characters are accompanied by Braille; finishes must be non-glare; and characters must contrast with their background, stated qualitatively as light-on-dark or dark-on-light rather than as a ratio. Character heights and mounting positions are specified, and those figures belong to the standard and the fabricator rather than to you.
 
 The consequence is blunt and worth saying early, because it protects the brand from being blamed later: **an expressive hand-drawn or script face is not permitted on these signs at all.** No contrast ratio rescues it. Design the compliant signage as its own zone that the brand visits rather than governs — the identity lives in the room around the sign, not on it — and give the fabricator the neutral face and the two colours rather than the brand file. Treat the specific dimensions as the fabricator's to confirm against the current standard and any local code.
 
-**Products and packaging — labelling rules.** Food, drink, cosmetics, supplements and several other categories carry their own requirements for the information panel: minimum type sizes, permitted type styles, and a requirement that the panel contrast clearly with its background. These are stricter than WCAG in some respects and unrelated to it in others. Name the regime for the user's market and category and tell them to check it; do not quote a type size as settled.
+**Products and packaging — labelling rules.** Food, drink, cosmetics, supplements and several other categories carry their own requirements for the information panel — minimum type sizes, permitted type styles, and a requirement that the panel contrast clearly with its background. These are stricter than WCAG in some respects and unrelated to it in others, and they vary by market and by category.
+
+How the product is sold can matter as much as what it is. Food packed in front of the customer is commonly treated very differently from the same food pre-packed for sale off a shelf, and the difference decides how much of the labelling regime applies at all. Establish that before specifying the panel, name the regime for the user's market, and point them at the body that actually rules on it — often a local authority rather than a national one. Do not quote a type size as settled.
 
 Two things follow that are easy to miss. The contrast ratios below are defined for sRGB on a screen, so they are a useful proxy for print and not the governing standard there — ink on stock, coating, and ambient light all move real legibility, and a pairing that clears 4.5:1 in the calculator can still be unreadable at 6pt on uncoated card under supermarket lighting. And a printed surface has no user-adjustable text size, so the headroom that a screen gets from zoom does not exist; take more margin than the threshold on anything small and printed.
 
@@ -151,7 +169,7 @@ Build it as roles, not as a row of swatches, because the roles are what get chec
 | Role | Use | Contrast obligation |
 |---|---|---|
 | Ground | The dominant surface | Reference for everything on it |
-| Ink | Line art and body text on ground | 4.5:1 against ground |
+| Ink | Line art and body text on ground | 4.5:1 against ground where it sets text; none where the line art is decorative |
 | Accent | Highlight, one or two only | 3:1 if it carries meaning, none if decorative |
 | Utility | Error, warning, success | 4.5:1 plus a non-colour signal |
 
@@ -181,7 +199,11 @@ Give the system as three roles:
 For each recommendation, give the reason it fits *this* brand and what it will struggle with, so the user is choosing rather than reading a menu. Then run every candidate through these, because expressive faces fail on exactly these and it is always discovered late:
 
 - **Weights available.** Many display and handwriting faces ship in a single weight. If the system needs emphasis inside a heading, that face cannot provide it and the workaround will be bad.
-- **Character set.** Check the languages, accents and diacritics the brand actually needs, plus currency symbols. Hand-drawn faces have the thinnest coverage of any category, and a missing accent in a market you sell to is a visible defect.
+- **Character set, tested rather than assumed.** Hand-drawn and display faces have the thinnest coverage of any category. Checking that a face "has accents" does not catch the real failure: several languages stack more than one mark on a single vowel, and a font can render the simple accented forms perfectly while collapsing on the stacked ones — so you type one character, watch it appear, and pass a font that cannot set the actual copy. Test by pasting a line of the brand's own real text, including its longest words and a price, and inspect every mark. Watch for silent substitution as much as for a missing-glyph box: a fallback face quietly supplying the character is what survives all the way to print, because nothing looked broken.
+
+  Where a name or its copy carries diacritics or a non-Latin script, two of the Step 6 specs change shape. Clear space is measured from the outermost mark rather than from the cap height, since a diacritic is what something crashes into. And minimum size is set by the mark, not the letter: the mark merges into the character below it before anything else becomes illegible, and a name whose mark has merged is a different word.
+
+  When the brand sets two languages, the face has to carry both and the layout has to hold both. Set both in the same family — one language in the expressive face and the other in a plain one reads as a decision about which language is real. Fix the order once and keep it everywhere, and build the layout to whichever language runs longer so the shorter one does not leave a hole.
 - **Figures.** Tables, prices, and nutrition panels need tabular lining figures. A handwriting face with proportional figures makes any column of numbers ragged.
 - **Legibility floor.** Script and handwriting faces have a size below which they stop being readable, and it is much higher than designers assume. Confine them to display sizes. Never set body copy, never set legally required text, and never set anything a user must read under stress in them. This is not a preference; it is the accessibility half of the brief, and low-vision and dyslexic readers are who it protects.
 - **Licence.** Say the licence and what it permits, since desktop, web, app embedding and logo use are separately granted and a font legal in a mockup can be illegal on a shipped app. Prefer openly licensed families when the user has no type budget, and say when the paid option is genuinely worth it. Never draw a logotype from a face whose licence forbids modification without saying so.
